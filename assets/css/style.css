@@ -1,0 +1,858 @@
+body {
+    background-color: #0e0c15;
+    font-family: Arial, sans-serif;
+}
+/* Header Section CSS Start */
+
+.navbar {
+    padding: 16px;
+}
+
+.navbar-dark {
+    background-color: #0e0c15;
+}
+
+.navbar-dark .home-link,
+.product-link,
+.about-link,
+.blog-link,
+.news-link,
+.reg-link {
+    color: white !important;
+    margin-left: 1.2rem;
+    font-size: larger;
+    text-decoration: none;
+}
+
+.navbar-dark .home-link:hover,
+.product-link:hover,
+.about-link:hover,
+.blog-link:hover,
+.news-link:hover,
+.reg-link:hover {
+    color: #8a2be2 !important;
+    border-bottom: 1px solid #8a2be2;
+}
+
+.login-btn {
+    background: linear-gradient(to right, #a855f7, #6b21a8);
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    margin-left: 1.2rem;
+    transform: scale(1);
+    transition: transform 0.3s ease, background 0.3s ease, border 0.3s ease;
+
+}
+
+.login-btn:hover {
+    background: linear-gradient(to right, #6b21a8, #a855f7);
+    border: 2px solid white;
+    transform: scale(1.1);
+    color: white;
+}
+
+.navbar-brand img {
+    height: 3.6rem;
+    object-fit: contain;
+}
+
+/* body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+} */
+
+.content {
+    padding: 100px 15px;
+    text-align: center;
+overflow: hidden  !important;
+  }
+
+.navbar-collapse {
+    flex-grow: unset;
+}
+
+/* Header Section CSS End */
+
+/* terms and condition section CSS Start */
+.terms-condition-icon {
+    height: 1.5rem;
+    width: auto;
+    margin-right: 1rem;
+}
+
+.terms-condition-paragraph {
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.terms-condition-headingrow {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    color: #8a2be2;
+    font-weight: 700;
+    display: flex;
+}
+
+.terms-condition-heading-date {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.terms-condition-content {
+
+    margin-top: 7rem;
+}
+
+.terms-condition-title {
+
+    font-size: 2.25rem;
+    line-height: 1;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 4rem;
+}
+
+.terms-condition-accordion {
+    /* margin-top: 30px; */
+    /* margin-bottom: 10px; */
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+
+}
+
+.terms-condition-accordion-header {
+    /* padding: 0.25rem;
+    padding-top: 1.5rem; */
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    border-radius: 5px 5px 0 0;
+    padding: 2.5rem;
+}
+
+.terms-condition-accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+    display: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .terms-condition-title {
+        font-size: 2.5rem;
+    }
+
+    .terms-condition-accordion-header {
+        padding: 0px;
+        padding-top: 1.5rem;
+    }
+
+    .terms-condition-headingrow {
+        font-size: 1rem;
+    }
+}
+/* terms and condition section CSS end */
+
+
+/* FAQ's Section CSS Start */
+
+
+.news-icon {
+    height: 1.5rem;
+    width: auto;
+    margin-right: 1rem;
+}
+
+.headingrow {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    color: #8a2be2;
+    font-weight: 700;
+    display: flex;
+}
+
+.content {
+
+    padding: 50px 16px;
+}
+
+.title {
+
+    font-size: 3.75rem;
+    line-height: 1;
+    color: white;
+    font-weight: bold;
+}
+
+.accordion {
+    /* margin-top: 30px; */
+    /* margin-bottom: 10px; */
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+
+}
+
+.accordion-header {
+    /* padding: 0.25rem;
+    padding-top: 1.5rem; */
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    border-radius: 5px 5px 0 0;
+}
+
+.accordion-content {
+    max-height: 0;
+    /* Default height */
+    overflow: hidden;
+    /* Hide overflowing content */
+    transition: max-height 0.5s ease-in-out;
+    /* Smooth transition */
+    display: none;
+    /* Start hidden */
+}
+
+.arrow {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.arrow.open {
+    transform: rotate(180deg);
+    /* Rotate arrow when open */
+    color: #8a2be2
+        /* Purple when active */
+}
+
+.text-gray-300 {
+    color: #9ca3af;
+}
+
+.my-3 {
+    margin: 1rem 0;
+}
+
+.pt-51 {
+    padding-top: 0.5rem;
+}
+
+.list-disc {
+    list-style-type: disc;
+}
+
+.pl-5 {
+    padding-left: 1.25rem;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .accordion-header {
+        padding: 0px;
+        padding-top: 1.5rem;
+    }
+
+    .headingrow {
+        font-size: 1rem;
+    }
+}
+
+
+
+/* FAQ's Section CSS End */
+
+/* Privacy Policy CSS Section Start */
+.privacy-policy-body {
+    background-color: #0e0c15;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+
+.privacy-policy-heading-div {
+    margin-top: 7rem;
+}
+
+.privacy-policy-title {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+    font-weight: bold;
+    color: white;
+}
+
+.privacy-policy-typewriter {
+    display: flex;
+    justify-content: center
+}
+
+#privacy-policy-text {
+    color: #8a2be2;
+}
+
+.privacy-policy-header {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    font-weight: 300;
+}
+
+.privacy-policy-heading-date {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.privacy-policy-heading-paragraph {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.privacy-policy-email-link {
+    color: #8a2be2;
+    text-decoration: none;
+}
+
+.privacy-policy-email-link:hover {
+    text-decoration: underline;
+}
+
+.privacy-policy-section {
+
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.privacy-policy-section:hover {
+    border-top: 2px solid #8a2be2;
+    border-bottom: 2px solid #8a2be2;
+}
+
+
+.privacy-policy-section-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.privacy-policy-section-content {
+    display: none;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.privacy-policy-section-content .paragraph {
+    margin-bottom: 15px;
+}
+
+.section.open .privacy-policy-section-content {
+    display: block;
+}
+
+
+.privacy-policy-custom-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.privacy-policy-custom-list li {
+    margin-bottom: 10px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .privacy-policy-typewriter {
+        flex-direction: column;
+    }
+
+    .privacy-policy-title {
+        font-size: 2rem;
+    }
+}
+
+/* Privacy Policy CSS Section End */
+
+/* Latest News Section CSS Start */
+.latest-news-heading-div {
+
+    margin-top: 7rem;
+}
+
+.latest-news-title {
+
+    font-size: 3.75rem;
+    line-height: 1;
+    color: #8a2be2;
+    font-weight: bold;
+    padding: 1.5rem;
+}
+
+.latest-news-container {
+
+    margin: 0 1rem;
+}
+
+.latest-news-item {
+    border: 2px solid transparent;
+    transition: border 0.3s;
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.latest-news-item:hover {
+    border-top: 2px solid #8a2be2;
+    border-bottom: 2px solid #8a2be2;
+}
+
+.latest-news-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    color: #ccc;
+}
+
+.latest-news-text {
+    display: flex;
+    align-items: center;
+}
+
+.latest-news-icon {
+    height: 1.5rem;
+    width: auto;
+    margin-right: 1rem;
+}
+
+.latest-news-date {
+    font-size: 1rem;
+    color: #bbb;
+    font-weight: bolder;
+}
+
+.latest-news-content {
+    padding: 1rem;
+    color: #ffffff;
+}
+
+/* Latest News Section CSS End */
+
+/* Footer Section CSS Start */
+footer{
+    background: rgba(0, 0, 0, 0.274);
+}
+.nav-link:hover {
+    color: #8a2be2 !important;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+
+    .img-div {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+    .img-div {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+/* Footer Section CSS End */
+
+
+
+
+
+
+
+ /* Login & registration page styling start */
+
+ body .logBody {
+    background-color: #0e0c15; /* Dark background */
+    color: #ffffff; /* White text */
+    font-family: 'Poppins', sans-serif; /* Add Poppins font to all text */
+  }
+  .text-bg-primary {
+    background-color: #ffffff0e !important; /* Background for primary text sections */
+  }
+  .cards {
+    background-color: #68208a0e;
+    border-width: 2px;
+    border-color: #6b21a8;
+    transition: box-shadow 0.8s ease-in-out;
+    box-shadow: 0 3px 7px 7px rgba(222, 58, 237, 0.384); /* Smooth transition effect */
+  }
+  
+  .cards:hover {
+    box-shadow: 0 8px 16px 16px rgba(124, 58, 237, 0.6); /* Purple shadow on hover */
+  }
+  
+  h2, h3, p, label {
+    color: #ffffff; /* White text for headings and labels */
+  }
+  .btn-primary {
+    background-color: #7c3aed; /* Purple color */
+    color: #ffffff; /* White text */
+    border: none;
+    padding: 7px 15px;
+    font-size: 15px;
+    width: 130px;
+    /* Remove border */
+  }
+  .btn-primary:hover {
+    background-color: #6b21a8; /* Darker purple on hover */
+  }
+  .btn-outline-primary {
+    background-color: transparent; /* Transparent for outline button */
+    color: #7c3aed; /* Purple text */
+    border-color: #a134c7; /* Purple border */
+  }
+  .btn-outline-primary:hover {
+    background-color: #a134c7; /* Purple background on hover */
+    color: #ffffff; /* White text on hover */
+    border-color: #a134c7; /* Purple border */
+  }
+  .form-control {
+    background-color: #ffffff0e; /* Darker input background */
+    color: #ffffff; /* White text */
+    border: 1px solid #ffffff; /* White border */
+  }
+  .form-control:focus {
+    background-color: #2b2b2b; /* Darker background on focus */
+    border-color: #a134c7; /* Purple border on focus */
+    color: #ffffff; /* White text on focus */
+  }
+  .form-check-label {
+    color: #ffffff;
+    text-align: center; /* White text for labels */
+  }
+  .link-secondary {
+    color: #ffffff; /* White text for links */
+  }
+  .link-secondary:hover {
+    color: #a134c7; /* Purple on hover */
+  }
+  .img-fluid {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-items: center;
+    padding-top: 80px;
+  }
+  .col-13 {
+    font-size: medium;
+    margin-top: 10px;
+    color: rgba(255, 255, 255, 0.384);
+  }
+  
+  .col-14 {
+    font-size: medium;
+    color: gray;
+    
+  }
+  
+  .col-15 {
+    font-size: large;
+    color: #a134c7;
+  }
+  
+  
+  .logincol {
+    color: #a134c7;
+    font-size: xx-large;
+    
+  }
+  
+  .logcaption {
+    font-size: 20px;
+    color: #a134c7;
+  }
+  
+  .col-17{
+    font-size: 15px;
+    
+  }
+  
+  .regcaption{
+    font-size: 23px;
+    color: #a134c7;
+  }
+  .regcaption1{
+    margin-top: 10px;
+  }
+  .regcaption2{
+    font-size: larger;
+  }
+  .regcaption3{
+    color: gray;
+  }
+  
+  .input-group-text{
+    color: #ffffff;
+    background-color: transparent;
+  }
+  
+  @keyframes scaleUp {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.05);
+    }
+  }
+  
+  
+  .invalid-feedback {
+    display: none; /* Hidden by default */
+    color: red; /* Error message color */
+  }
+  
+  .is-invalid {
+    border-color: red; /* Highlight the input border */
+  }
+  
+  
+  /* Login & registration page styling end */
+
+
+
+
+  /* blog page styling start */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body .blogbody {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px; /* Base font size */
+    margin: 0;
+    padding: 0;
+}
+
+/* Main timeline container */
+.main-timeline-5 {
+    position: relative;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.main-timeline-5::after {
+    content: "";
+    position: absolute;
+    width: 3px;
+    background-color: purple;
+    top: 0;
+    bottom: 0;
+    left: auto;
+    margin-left: -3px;
+}
+
+/* Container around content */
+.timeline-5 {
+    position: relative;
+    background-color: inherit;
+    width: 100%;
+}
+
+/* The circles on the timeline */
+.timeline-5::after {
+    content: "";
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    right: 1px;
+    background-color: #fff;
+    top: 18px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Place the container to the right */
+.right-5 {
+    padding: 0px 0px 20px 40px;
+    left: auto;
+}
+
+/* Add arrows to the right container (pointing left) */
+
+
+/* Fix the circle for containers on the right side */
+.right-5::after {
+    left: -10px;
+}
+
+/* Gradient background */
+.gradient-custom-5 {
+    background: linear-gradient(135deg, #0e0c14, #000000, #240579a8);
+}
+
+/* Styling for headings */
+ .bloghead {
+    color: #fff;
+    font-size: 2rem; /* Main heading */
+    padding-left: 70px;
+    padding-top: 20px;
+    
+    margin: 0 !important;
+}
+
+/* Sub-heading or additional heading */
+.bloghead2 {
+    color: #fff;
+    font-size: 1.25rem; /* Consistent subheading size */
+    margin-left: 70px;
+    padding-top: 10px;
+}
+
+/* Card heading */
+.head1 {
+    color: #fff;
+    font-size: 1.5rem; /* Consistent heading inside cards */
+    padding: 20px;
+}
+
+/* Date styling */
+.date1 {
+    color: rgba(255, 255, 255, 0.342);
+    font-size: 1.25rem; /* Consistent font size for dates */
+    padding: 20px;
+}
+
+/* Paragraph text */
+.para {
+    color: #fff;
+    font-size: 1.125rem; /* Consistent paragraph font size */
+    text-align: justify;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Container padding */
+.container {
+    padding: 1.5rem;
+}
+
+/* Responsive Styling */
+@media (max-width: 991px) {
+    .main-timeline-5 {
+        max-width: 100%;
+    }
+
+    .bloghead {
+        font-size: 1.75rem;
+        margin-left: 20px;
+    }
+
+    .bloghead2 {
+        font-size: 1rem;
+        margin-left: 20px;
+    }
+
+    .head1 {
+        font-size: 1.25rem;
+    }
+
+    .date1 {
+        font-size: 1rem;
+    }
+
+    .para {
+        font-size: 1rem;
+    }
+
+    .right-5 {
+        padding: 0px 0px 20px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .bloghead {
+        font-size: 1.5rem;
+        margin-left: 15px;
+    }
+
+    .bloghead2 {
+        font-size: 0.9rem;
+        margin-left: 15px;
+    }
+
+    .head1 {
+        font-size: 1.1rem;
+        padding: 20px;
+    }
+
+    .date1 {
+        font-size: 0.9rem;
+        padding: 20px;
+    }
+
+    .para {
+        font-size: 0.9rem;
+        padding: 20px;
+    }
+
+    /* Adjust padding for smaller screens */
+    .right-5 {
+        padding: 0px 0px 20px 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    /* For very small screens */
+    .bloghead {
+        font-size: 1.25rem;
+        margin-left: 10px;
+    }
+
+    .bloghead2 {
+        font-size: 0.8rem;
+        margin-left: 10px;
+    }
+
+    .head1 {
+        font-size: 1rem;
+        padding: 20px;
+    }
+
+    .date1 {
+        font-size: 0.8rem;
+        padding: 20px;
+    }
+
+    .para {
+        font-size: 0.8rem;
+        padding-top: 50px;
+        
+    }
+
+    /* Reduce padding on the smallest screens */
+    .right-5 {
+        padding: 0px 0px 20px 5px;
+    }
+
+    .container {
+        padding: 1rem;
+    }
+}
+
+/* blog page styling end */
