@@ -11,12 +11,14 @@ body {
 .navbar-dark {
     background-color: #0e0c15;
 }
-
+.nav-logo{
+width: 280px ;
+}
 .navbar-dark .home-link,
-.product-link,
+.features-link,
+.getstarted-link,
+.consulting-link,
 .about-link,
-.blog-link,
-.news-link,
 .reg-link {
     color: white !important;
     margin-left: 1.2rem;
@@ -25,10 +27,10 @@ body {
 }
 
 .navbar-dark .home-link:hover,
-.product-link:hover,
+.features-link:hover,
+.getstarted-link:hover,
+.consulting-link:hover,
 .about-link:hover,
-.blog-link:hover,
-.news-link:hover,
 .reg-link:hover {
     color: #8a2be2 !important;
     border-bottom: 1px solid #8a2be2;
