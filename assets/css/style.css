@@ -479,7 +479,10 @@ footer{
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-
+    .nav-logo{
+        width: 200px ;
+        }
+        
     .img-div {
         display: flex;
         justify-content: center;
