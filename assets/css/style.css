@@ -2,6 +2,10 @@ body {
     background-color: #0e0c15;
     font-family: 'Poppins', Arial, sans-serif;
 }
+.purple{
+    color:#D848BC;
+}
+
 /* Header Section CSS Start */
 
 .navbar {
@@ -58,12 +62,6 @@ width: 280px ;
     height: 3.6rem;
     object-fit: contain;
 }
-
-/* body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-} */
 
 .content {
     padding: 100px 15px;
@@ -453,6 +451,13 @@ overflow: hidden  !important;
 footer{
     background: rgba(0, 0, 0, 0.274);
 }
+.footer-logo{
+    width: 100%;
+    height:auto;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
 .nav-link:hover {
     color: #8a2be2 !important;
 }
@@ -464,13 +469,27 @@ footer{
         justify-content: center;
     }
 
+    .footer-logo{
+        width: 50%;
+        height:auto;
+       display: inline-block;
+      padding: 10px;
+    }
+
 }
 
-@media (min-width: 576px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767px) {
 
     .img-div {
         display: flex;
         justify-content: center;
+    }
+
+    .footer-logo{
+        width: 50%;
+        height:auto;
+       display: inline-block;
+      padding: 10px;
     }
 
 }
@@ -698,7 +717,7 @@ body .blogbody {
 /* Add arrows to the right container (pointing left) */
 
 
-/* Fix the circle for containers on the right side */
+/* Fix the circle for as on the right side */
 .right-5::after {
     left: -10px;
 }
@@ -1026,3 +1045,64 @@ body .blogbody {
     height: 20%;
     margin-right:3%;
 }
+.Link{
+    color: purple;
+    cursor: pointer;
+text-decoration: none  !important;
+}
+.Link:hover{
+text-decoration: underline !important;
+
+color: purple !important;
+}
+
+/* Custom btn */
+.custom-btn {
+    background-color: transparent;
+    color: white;
+    border: 2px solid; /* Base border */
+    padding: 0.5rem 1.5rem;
+    border-image: linear-gradient(to right, #f06, #4a90e2) 1; 
+}
+
+/* Get-starded Start */
+.justify{
+    text-align: justify !important;
+}
+.get-started{
+overflow: hidden;
+}
+.get-hero-img{
+    background-image: url("../imges/img/grid.png");
+    background-size: contain;
+
+    background-repeat: no-repeat;    
+
+}
+.get-hero-gif{
+    width: 100%;
+}
+
+.get-statistic-card{
+padding: 20px 40px;
+    background: rgba(128, 128, 128, 0.116);
+border-radius: 10px;
+
+
+}
+#get-Query hr{
+    height: 2px; color: white;
+}
+.get-Query-img{
+    border: 2px solid purple; /* Purple border */
+    border-radius: 15px; /* Rounded corners */
+    width: 100%;
+}
+
+.get-Query-check{
+width: 5%;
+height: 5%;
+align-self: center;
+margin:0 10px;
+}
+
