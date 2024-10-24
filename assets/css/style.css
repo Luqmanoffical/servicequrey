@@ -3,7 +3,7 @@ body {
     font-family: 'Poppins', Arial, sans-serif;
 }
 .purple{
-    color:#D848BC;
+    color:#8a2be2 !important;
 }
 
 /* Header Section CSS Start */
@@ -1109,3 +1109,50 @@ align-self: center;
 margin:0 10px;
 }
 
+/* Get started end */
+
+/* consulting started */
+.consulting{
+    color: #ffffff;
+    margin-top: 120px;
+padding: 10px 50px;
+}
+
+.consulting-service-img{
+    width: 85%;
+    margin-left: 18px;
+}
+
+
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .consulting{
+        margin-top: 140px;
+    padding: 10px 20px;
+    }
+    
+    .consulting-service-img{
+        width: 95%;
+        margin: 6px;
+    }
+    
+    
+    
+ 
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+    .consulting{
+        margin-top: 160px;
+    padding: 10px 10px;
+    }
+    
+    .consulting-service-img{
+        width: 100%;
+        margin: 6px;
+    }
+    
+    
+    
+}
