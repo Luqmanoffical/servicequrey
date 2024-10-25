@@ -1136,9 +1136,6 @@ padding: 10px 50px;
         margin: 6px;
     }
     
-    
-    
- 
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
@@ -1151,8 +1148,5 @@ padding: 10px 50px;
     .consulting-service-img{
         width: 100%;
         margin: 6px;
-    }
-    
-    
-    
+    }   
 }
