@@ -2,7 +2,9 @@ body {
     background-color: #0e0c15;
     font-family: 'Poppins', Arial, sans-serif;
 }
-
+.purple{
+    color:#8a2be2 !important;
+}
 /* Header Section CSS Start */
 
 .navbar {
@@ -12,12 +14,14 @@ body {
 .navbar-dark {
     background-color: #0e0c15;
 }
-
+.nav-logo{
+width: 280px ;
+}
 .navbar-dark .home-link,
-.product-link,
+.features-link,
+.getstarted-link,
+.consulting-link,
 .about-link,
-.blog-link,
-.news-link,
 .reg-link {
     color: white !important;
     margin-left: 1.2rem;
@@ -26,10 +30,10 @@ body {
 }
 
 .navbar-dark .home-link:hover,
-.product-link:hover,
+.features-link:hover,
+.getstarted-link:hover,
+.consulting-link:hover,
 .about-link:hover,
-.blog-link:hover,
-.news-link:hover,
 .reg-link:hover {
     color: #8a2be2 !important;
     border-bottom: 1px solid #8a2be2;
@@ -57,12 +61,6 @@ body {
     height: 3.6rem;
     object-fit: contain;
 }
-
-/* body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-} */
 
 .content {
     padding: 100px 15px;
@@ -453,7 +451,13 @@ body {
 footer {
     background: rgba(0, 0, 0, 0.274);
 }
-
+.footer-logo{
+    width: 100%;
+    height:auto;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
 .nav-link:hover {
     color: #8a2be2 !important;
 }
@@ -465,13 +469,30 @@ footer {
         justify-content: center;
     }
 
+    .footer-logo{
+        width: 50%;
+        height:auto;
+       display: inline-block;
+      padding: 10px;
+    }
+
 }
 
-@media (min-width: 576px) and (max-width: 767px) {
-
+@media (min-width: 320px) and (max-width: 767px) {
+    .nav-logo{
+        width: 200px ;
+        }
+        
     .img-div {
         display: flex;
         justify-content: center;
+    }
+
+    .footer-logo{
+        width: 50%;
+        height:auto;
+       display: inline-block;
+      padding: 10px;
     }
 
 }
@@ -764,7 +785,7 @@ body .blogbody {
 /* Add arrows to the right container (pointing left) */
 
 
-/* Fix the circle for containers on the right side */
+/* Fix the circle for as on the right side */
 .right-5::after {
     left: -10px;
 }
@@ -1552,4 +1573,109 @@ body .blogbody {
     height: 100%;
     display: flex;
     flex-direction: column;
+
+    height: 20%;
+    margin-right:3%;
+}
+.Link{
+    color: purple;
+    cursor: pointer;
+text-decoration: none  !important;
+}
+.Link:hover{
+text-decoration: underline !important;
+
+color: purple !important;
+}
+
+/* Custom btn */
+.custom-btn {
+    background-color: transparent;
+    color: white;
+    border: 2px solid; /* Base border */
+    padding: 0.5rem 1.5rem;
+    border-image: linear-gradient(to right, #f06, #4a90e2) 1; 
+}
+
+/* Get-starded Start */
+.justify{
+    text-align: justify !important;
+}
+.get-started{
+overflow: hidden;
+}
+.get-hero-img{
+    background-image: url("../imges/img/grid.png");
+    background-size: contain;
+
+    background-repeat: no-repeat;    
+
+}
+.get-hero-gif{
+    width: 100%;
+}
+
+.get-statistic-card{
+padding: 20px 40px;
+    background: rgba(128, 128, 128, 0.116);
+border-radius: 10px;
+
+
+}
+#get-Query hr{
+    height: 2px; color: white;
+}
+.get-Query-img{
+    border: 2px solid purple; /* Purple border */
+    border-radius: 15px; /* Rounded corners */
+    width: 100%;
+}
+
+.get-Query-check{
+width: 5%;
+height: 5%;
+align-self: center;
+margin:0 10px;
+}
+
+/* Get started end */
+
+/* consulting started */
+.consulting{
+    color: #ffffff;
+    margin-top: 120px;
+padding: 10px 50px;
+}
+
+.consulting-service-img{
+    width: 85%;
+    margin-left: 18px;
+}
+
+
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .consulting{
+        margin-top: 140px;
+    padding: 10px 20px;
+    }
+    
+    .consulting-service-img{
+        width: 95%;
+        margin: 6px;
+    }
+    
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+    .consulting{
+        margin-top: 160px;
+    padding: 10px 10px;
+    }
+    
+    .consulting-service-img{
+        width: 100%;
+        margin: 6px;
+    }   
 }
