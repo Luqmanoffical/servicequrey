@@ -1655,6 +1655,10 @@ align-self: center;
 margin:0 10px;
 }
 
+.home-hero-gif{
+    width: 70%;
+    
+}
 /* Get started end */
 
 /* consulting started */
@@ -1733,7 +1737,4 @@ text-align: justify;
         padding: 10px;
        }
        
-.home-hero-gif{
-    width: 70%;
-    
-}
+    }
