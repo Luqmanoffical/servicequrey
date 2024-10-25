@@ -1679,3 +1679,41 @@ padding: 10px 50px;
         margin: 6px;
     }   
 }
+
+
+/* About page start */
+.about{
+ margin-top: 80px;
+ padding: 50px;
+}
+.about-hero{
+    border-radius: 10px;
+}
+.about-hero p{
+    font-size: 1rem;
+text-align: justify;
+}
+
+.about-latest-new-card{
+    border-radius: 10px;
+    background: #7070701e;
+    padding: 25px;
+    margin:  20px 0;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .about{
+        margin-top: 100px;
+        padding: 30px;
+       }
+       
+ 
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .about{
+        margin-top: 150px;
+        padding: 10px;
+       }
+       
+}
