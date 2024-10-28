@@ -597,7 +597,7 @@ label {
 
 .icon-box {
     text-align: center;
-    padding: 20px;
+   
 }
 
 .six-cards-icons {
@@ -646,10 +646,7 @@ label {
         /* Adjust paragraph size */
     }
 
-    .row {
-        padding: 20px;
-        /* Less padding on smaller screens */
-    }
+   
 
     .gradient-btn {
         width: 100%;
