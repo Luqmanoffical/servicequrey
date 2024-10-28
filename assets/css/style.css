@@ -1789,7 +1789,7 @@ text-align: justify;
 
 .about{
     /* background: linear-gradient(-225deg, #7642b200 0%, #33023127 52%, #3e146d28 100%); */
-    background-image: radial-gradient( circle 382px at 50% 50.2%,  rgba(73, 75, 212, 0.219) 0.1%, rgba(3, 1, 50, 0.192) 100.2% );
+    background-image: radial-gradient( circle 382px at 50% 50.2%,  rgba(73, 75, 212, 0.219) 0.1%, rgba(3, 1, 50, 0.075) 100.2% );
 }
 
 
