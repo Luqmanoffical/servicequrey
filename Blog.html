@@ -1,216 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>about</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">    
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <style>
-        
-    
-        </style>
-        
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/css/style.css">
+
 </head>
+
 <body>
 
+  <!-- header Section Start -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img class="nav-logo" src="./assets/imges/logo/logo.png" alt="logo" />
+        </a>
 
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-     <!-- Navbar -->
-     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img class="nav-logo" src="./assets/imges/logo/logo.png" alt="logo" />
-            </a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <!-- Align items to the start on small screens -->
+            <ul class="navbar-nav mb-2 mb-lg-0 text-start text-lg-center">
+                <li class="nav-item">
+                    <a class="home-link active" aria-current="page" href="./home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="features-link" href="./features.html">Features</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="getstarted-link " href="./get.html">Get Started</a>
+                </li>
+                <li class="nav-item">
+                    <a class="consulting-link" href="./consulting.html">Consulting</a>
+                </li>
+                <li class="nav-item">
+                    <a class="about-link" href="./about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="reg-link" href="./Register.html">Register</a>
+                </li>
+            </ul>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <!-- Align items to the start on small screens -->
-                <ul class="navbar-nav mb-2 mb-lg-0 text-start text-lg-center">
-                    <li class="nav-item">
-                        <a class="home-link active" aria-current="page" href="./home.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="features-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="getstarted-link " href="./get.html">  Get Started</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="consulting-link" href="./consulting.html">Consulting</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="about-link" href="./about.html"><span class="purple">About</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="reg-link" href="./Register.html">Register</a>
-                    </li>
-                </ul>
-
-                <!-- Log In button aligned to the right -->
-                <div class="d-flex ms-auto mt-2 mt-lg-0">
-                   <a href="./Login.html" class="text-light"><button type="button" class="btn login-btn">Log In</button>
+            <!-- Log In button aligned to the right -->
+            <div class="d-flex ms-auto mt-2 mt-lg-0">
+               <a href="./Login.html" class="text-light"><button type="button" class="btn login-btn">Log In</button>
                   </a>
-                </div>
             </div>
         </div>
-    </nav>
-<!-- Hero section start -->
-<div class="about">
-<section id="about-mit" class="border text-white border-white about-hero p-3 p-md-5">
-<h1 class="text-center">
-    The MIT License (MIT)
-</h1>
-<p>
+    </div>
+</nav>
+  <!-- header Section End -->
 
-    Copyright © 2024 HoloModular LLC
-</p>
-<p>
-    Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-</p>
-<p>
-    The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-</p>
-<p>
-    THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-</p>
-
+<!-- blog page content Start -->
+<section class="blog-section container-fluid mx-0 py-5">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-12">
+        <h1 class="fw-bold fs-1" style="color: #8a2be2;">Blogs</h1>
+        <p class="blog-paragraph">I've been working on Metaverse for the past 3 years. Here are our blogs and our experiences.</p>
+      </div>
+    </div>
+  </div>
+  <div class="container py-5">
+    <div class="timeline" id="timelineContainer">
+      <!-- Timeline items will be injected here by JavaScript -->
+    </div>
+  </div>
 </section>
-<section id="about-latest-new" class="text-white py-5">
-    <h1 class="text-center py-3">
-        Latest News
-    </h1>
-<div class="about-latest-new-card" data-aos="fade-up"
-data-aos-anchor-placement="center-center">
-    <h4 >
-        Query Databases using Artificial Intelligence
-    </h4>
-    <p >
-        We have added a new feature that allows you to query your database using artificial intelligence using OpenAI GPT LLMs. Start building secure, AI-enabled query applications with ServiceQuery today. Visit our repository for more information.
-    </p>
-    <p class="fs-6 text-secondary">
-        Date: October 16, 2024
-    </p>
-    <a href="https://github.com/holomodular/ServiceQuery-OpenAI"  class="Link">View ServiceQuery.OpenAI</a>
-</div>
-
-<div class="about-latest-new-card" data-aos="fade-up"
-data-aos-anchor-placement="center-center">
-    <h4>
-        ServiceQuery v2.1.1 Release
-    </h4>
-    <p>
-        
-Our latest release supports sorting nullable data types and we have rebuilt our unit tests. Code coverage for the library is now at 96.08%.
-    </p>
-    <p class="fs-6 text-secondary">
-        Date: October 10, 2024
-    </p>
-</div>
+<!-- blog page content End -->
 
 
-<div  class="about-latest-new-card" data-aos="fade-up"
-data-aos-anchor-placement="center-center">
-    <h4>
-        ServiceQuery v2.0 Release
 
-    </h4>
-    <p>
-        Our latest release removes all external NuGet package references from our library and is pure .NET C# framework code. We are also now supporting all new .NET 8.0 data types including: DateOnly, TimeOnly, and UInt128.
-    </p>
-    <p class="fs-6 text-secondary">
-        Date: October 5, 2024
-    </p>
-</div>
-
-
-<div  class="about-latest-new-card" data-aos="fade-up"
-data-aos-anchor-placement="center-center">
-    <h4>
-        Introducing ServiceQuery
-    </h4>
-    <p>
-        It is with great pleasure that we are announcing the official release of ServiceQuery on GitHub! ServiceQuery is a powerful open-source tool for data querying over REST APIs supporting polyglot, multi-engine database access. We can't wait to see what you build with it!
-    </p>
-    <p class="fs-6 text-secondary">
-        Date: September 28, 2024
-    </p>
-</div>
-
-</section>
-
-
-<section id="about-free" class=" border text-white border-white free-beer p-3 p-md-5">
-
-    <h1 class="text-center">
-        Free as in Beer
-    </h1>
-    <p>
-        Richard Stallman originally came up with the phrase "Free as in Beer" to describe software that is free as a matter of liberty, not price. We believe in this philosophy and have made our core software platforms free to use as well.
-    </p>
-
-    <p>
-        The recipe for beer is free. You can brew any type of beer you want, made from wheat, apples, honey, or whatever you like. You can share your beer with your friends and family, or even sell the beer. The recipe for beer is free, you just have to add the water, ingredients, and put in the work to follow the recipe.
-    </p>
-    <p>
-        We have developed technology that is the recipe for building microservices. You can use it to build any type of software you want. ServiceBricks and ServiceQuery are our brands that allow you to create microservices in seconds, instead of days or weeks. We are giving away the underlying recipe for building microservices for free, so that everyone may use it. Free as in liberty, free as in beer.
-    </p>
-</section>
-
-<section id="about-owned" >
-<div class="text-white row py-4">
-<div class="col-12 col-lg-7 " data-aos="fade-right"
-data-aos-offset="300"
-data-aos-easing="ease-in-sine">
-    <h1>Owned and Maintained by:</h1>
-    <img src="./assets/imges/logo/holoicon.png" alt="Holo logo" class="about-logo">
-    <p>
-        Holographic Software for the Metaverse
-    </p>
-    <p>
-        Our goal is to develop new and innovative technologies to complement an augmented and virtual reality world.
-    </p>
-    <div class="about-btn">
-        <a href="https://holomodular.com/"  class="text-light custom-hover">
-    <button type="button" class="btn gradient-btn px-4 my-3 py-2">
-        Visit our website
-    </button></a>
-</div>
-</div>
-
-<div class="col-12 col-lg-5 about-open" data-aos="fade-left"
-data-aos-offset="300"
-data-aos-easing="ease-in-sine">
-    <h1>
-        Open Source Software
-    </h1>
-    <img src="./assets/imges/logo/mit.png" alt="MIt" class="about-logo">
-    <p>
-        ServiceQuery is FREE, open-source, enterprise-grade software that enables developers to query databases easily. It is available under the MIT permissive software license.
-    </p>
-</div>
-
-</div>
-
-</section>
-</div>
-    
-   <!-- Footer -->
-   <footer class="footer">
-    <div class=" py-3  border-top border-light-subtle">
+  <!-- Footer Section Start -->
+  <footer class="footer">
+    <div class=" py-3 px-4 border-top border-light-subtle">
         <div class="   overflow-hidden">
             <div class="row gy-4 align-items-center">
                 <!-- Logo Section -->
-                <div class="img-div col-12 col-md-12 col-lg-2 text-center text-md-start">
-                    <a href="#!">
+                <div class="img-div col-12 col-md-12 col-lg-2  text-center text-md-start">
+                    <a href="./home.html">
                         <img src="./assets/imges/logo/logo.png" alt="Logo" class="footer-logo">
                     </a>
                 </div>
@@ -238,7 +115,6 @@ data-aos-easing="ease-in-sine">
                         </li>
                     </ul>
                 </div>
-
 
                 <!-- Social Media Section -->
                 <div class="col-12 col-md-12 col-lg-2 text-center">
@@ -310,14 +186,96 @@ data-aos-easing="ease-in-sine">
 </footer>
 
 
+  <!-- Footer Section End -->
+
+  <!-- Section: Timeline -->
+  <script>
+    // blog page functionality
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const data = [
+        {
+          icon: "./assets/imges//icons/circle-fill.svg",
+          title: "2024",
+          content: `
+                <p>Built and launched service Bricks and ServiceQuery from scratch</p>
+                <div class="images">
+                    <img src="https://assets.aceternity.com/templates/startup-1.webp" alt="startup template">
+                    <img src="https://assets.aceternity.com/templates/startup-2.webp" alt="startup template">
+                    <img src="https://assets.aceternity.com/templates/startup-3.webp" alt="startup template">
+                    <img src="https://assets.aceternity.com/templates/startup-4.webp" alt="startup template">
+                </div>
+            `,
+        },
+        {
+          icon: "./assets/imges//icons/circle-fill.svg",
+          title: "Early 2023",
+          content: `
+                <p>I usually run out of copy, but when I see content this big, I try to integrate lorem ipsum.</p>
+                <p>Lorem ipsum is for people who are too lazy to write copy. But we are not. Here are some more examples of beautiful designs I built.</p>
+                <div class="images">
+                    <img src="https://assets.aceternity.com/pro/hero-sections.png" alt="hero template">
+                    <img src="https://assets.aceternity.com/features-section.png" alt="feature template">
+                    <img src="https://assets.aceternity.com/pro/bento-grids.png" alt="bento template">
+                    <img src="https://assets.aceternity.com/cards.png" alt="cards template">
+                </div>
+            `,
+        },
+        {
+          icon: "./assets/imges//icons/circle-fill.svg",
+          title: "2021",
+          content: `
+                <p>Deployed 5 new components on MicroServices today</p>
+                <div>
+                    <p>✅ Login component</p>
+                    <p>✅ Startup Micro Service for Service with service Bricks</p>
+                    <p>✅ Random file upload lol</p>
+                    <p>✅ Multiverse</p>
+                </div>
+                <div class="images">
+                    <img src="https://assets.aceternity.com/pro/hero-sections.png" alt="hero template">
+                    <img src="https://assets.aceternity.com/features-section.png" alt="feature template">
+                    <img src="https://assets.aceternity.com/pro/bento-grids.png" alt="bento template">
+                    <img src="https://assets.aceternity.com/cards.png" alt="cards template">
+                </div>
+            `,
+        },
+      ];
+
+      const timelineContainer = document.getElementById("timelineContainer");
+
+      data.forEach(item => {
+        const timelineItem = document.createElement("div");
+        timelineItem.className = "timeline-item";
+
+        // Create a container for the icon and title
+        const titleContainer = document.createElement("div");
+        titleContainer.className = "title-container"; // Class for styling
+
+        // Create an image element for the SVG icon
+        const iconElement = document.createElement("img");
+        iconElement.src = item.icon;
+        iconElement.alt = `${item.title} icon`; // Alt text for accessibility
+        iconElement.className = "timeline-icon"; // Optional: Add a class for styling
+
+        // Create a heading element for the title
+        const titleElement = document.createElement("h2");
+        titleElement.textContent = item.title;
+
+        // Append the icon and title to the title container
+        titleContainer.appendChild(iconElement);
+        titleContainer.appendChild(titleElement);
+
+        // Set innerHTML with the content
+        timelineItem.innerHTML += `${titleContainer.outerHTML}${item.content}`;
+
+        timelineContainer.appendChild(timelineItem);
+      });
+    });
 
 
+  </script>
 
 </body>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-      </script>
-    </html>
+
+</html>
