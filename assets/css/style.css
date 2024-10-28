@@ -1799,3 +1799,11 @@ h1 {
 .custom-hover:hover {
     color: #343a40 !important; /* Or use Bootstrap's dark color  */
 }
+
+.Link{
+    color: purple;
+    cursor: pointer;
+text-decoration: none  !important;
+}
+.Link:hover{
+text-decoration: underline !important;}
