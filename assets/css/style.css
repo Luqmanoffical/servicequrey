@@ -1053,11 +1053,11 @@ body .blogbody {
     }
 
     .hero-content h1 {
-        font-size: 32px; /* Reduce font size for smaller screens */
+        font-size: 20px; /* Reduce font size for smaller screens */
     }
 
     .hero-content span {
-        font-size: 20px;
+        font-size: 32px;
          /* Reduce font size for smaller screens */
     }
 
