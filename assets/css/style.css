@@ -1977,6 +1977,7 @@ text-align: justify;
     font-size: 1.25rem;
     margin-bottom: 15px;
     line-height: 1.6;
+    padding: 0rem 3rem;
 }
 
 .terms-condition-headingrow {
@@ -2030,11 +2031,10 @@ text-align: justify;
 }
 
 .terms-condition-accordion-content {
-    max-height: 0;
+    /* max-height: 0; */
     overflow: hidden;
-    transition: max-height 0.5s ease-in-out;
-    padding: 0 2rem;
-    /* Adjust padding to prevent overflow */
+    transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out;
+    padding: 0;
 }
 
 
@@ -2049,6 +2049,7 @@ text-align: justify;
 
     .terms-condition-paragraph {
         font-size: 0.8rem;
+        padding: 0rem 2rem;
     }
 
     .terms-condition-accordion-header {
@@ -2076,6 +2077,7 @@ text-align: justify;
 
     .terms-condition-paragraph {
         font-size: 0.8rem;
+        padding: 0rem 2rem;
     }
 
     .terms-condition-accordion-header {
@@ -2242,6 +2244,8 @@ text-align: justify;
 
 
 /* FAQ's Section CSS End */
+
+
 
 
 /* Privacy Policy CSS Section Start */
