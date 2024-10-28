@@ -1743,10 +1743,28 @@ text-align: justify;
     margin:  20px 0;
 }
 
+.free-beer{
+    border-radius: 10px;
+
+    padding: 10px 25px ;
+    margin:  20px 0;
+}
+
+.about-logo{
+    height: 80px;
+    width: auto;
+}
+.about-btn{
+    height: 20px;
+    width: 200px;
+}
 @media (min-width: 768px) and (max-width: 992px) {
     .about{
         margin-top: 100px;
         padding: 30px;
+       }
+       .about-open{
+        margin-top: 50px;
        }
        
  
@@ -1757,5 +1775,19 @@ text-align: justify;
         margin-top: 150px;
         padding: 10px;
        }
-       
+       .about-open{
+        margin-top: 50px;
+       }
+              
     }
+
+    /* Gridenet */
+.consulting{
+    background: linear-gradient(-225deg, #7642b200 0%, #ffffff00 52%, #3e146d28 100%);
+}
+
+
+.about{
+    /* background: linear-gradient(-225deg, #7642b200 0%, #33023127 52%, #3e146d28 100%); */
+    background-image: radial-gradient( circle 382px at 50% 50.2%,  rgba(73, 75, 212, 0.219) 0.1%, rgba(3, 1, 50, 0.192) 100.2% );
+}
