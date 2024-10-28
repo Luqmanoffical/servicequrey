@@ -15,7 +15,7 @@
 
 <!-- Header start -->
 
- <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+ <nav class="navbar navbar-expand-lg navbar-dark fixed-top ">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">
             <img class="nav-logo" src="./assets/imges/logo/logo.png" alt="logo" />
@@ -70,7 +70,7 @@
             <h1>Defining Qualities that<br/>
                 Enhance User Experience</h1>
             <p>
-                <img src="./assets/imges/icons/check.png" alt="Check Icon" class="icon">
+                <img src="./assets/imges/icons/check.png"  alt="Check Icon" class="icon">
                 ServiceQuery simplifies data querying over REST APIs, supporting a variety of SQL and NoSQL databases while ensuring security against injection attacks.
             </p>
             <div class="custom-bottom-line"></div>
@@ -81,120 +81,206 @@
             <button class="gradient-btn">Get started</button>
         </div>
         <div class="col-md-6">
-            <img src="./assets/imges/gif/featureanimation.gif" alt="Feature Image" class="h-75"   style="margin-top: 40px; margin-left: 50px;">
+            <img src="./assets/imges/gif/featureanimation.gif" alt="Feature Image" class="h-75"   style="margin-top: 40px; margin-left: 30px;">
         </div>
     </div>
 </section>
 
 <!-- feature hero page end -->
 
+
+
+
+
 <!-- feature section start -->
-<div class="container my-5">
-    <h2 class="text-center mb-4">Our Services</h2>
-    <div class="row">
-        <!-- Card 1 -->
-        <div class="col-12 col-md-4 mb-4">
-            <div class="card-benefit-bg features-benefit1" style="background-image: url('./assets/imges/icons/card-3.svg');">
-                <img src="./assets/imges/icons/check.png" class="benefit-icon">
-                <div class="card-body text-white">
-                    <h5 class="card-title mt-3">Database Support</h5>
-                    <p class="card-text">Seamlessly supports popular SQL and NoSQL databases including Azure Data Tables, Cosmos DB, MongoDB, MySQL, SQLite, SQL Server, PostgreSQL, and Oracle.</p>
-                </div>
-            </div>
-        </div>
 
-        <!-- Card 2 -->
-        <div class="col-12 col-md-4 pb-4">
-            <div class="card-benefit-bg features-benefit2" style="background-image: url('./assets/imges/icons/card-3.svg');">
-                <img src="./assets/imges/icons/check.png" class="benefit-icon">
-                <div class="card-body text-white">
-                    <h5 class="card-title mt-3">Security</h5>
-                    <p class="card-text">Eliminates injection attacks by building LINQ expressions using individually mapped functions and parsed data.</p>
-                </div>
-            </div>
-        </div>
 
-        <!-- Card 3 -->
-        <div class="col-12 col-md-4 pb-3">
-            <div class="card-benefit-bg features-benefit3" style="background-image: url('./assets/imges/icons/card-3.svg');">
-                <img src="./assets/imges/icons/check.png" class="benefit-icon">
-                <div class="card-body text-white">
-                    <h5 class="card-title mt-3">Dynamic Querying</h5>
-                    <p class="card-text">Allows clients and front-end applications to dynamically query data through a standardized endpoint.</p>
-                </div>
-            </div>
-        </div>
+<div class="container benefits-section mt-5">
 
-        <!-- Card 4 -->
+    <h1 class="mb-5"  style="text-align: center ; font-size: 30px;">Unlock Potential with Every Feature!  </h1>
+    <div class="row" id="benefit-cards">
+        
         <div class="col-md-4 mb-4">
-            <div class="card-benefit-bg features-benefit4" style="background-image: url('./assets/imges/icons/card-3.svg');">
-                <img src="./assets/imges/icons/check.png" class="benefit-icon">
-                <div class="card-body text-white">
-                    <h5 class="card-title mt-3">JavaScript Integration</h5>
-                    <p class="card-text">Easy integration with front-end applications using the ServiceQuery.js JavaScript file for building request queries.</p>
-                </div>
+          
+            <div class="benefit-card">
+        <img class="feature-benefit-icons "  src="./assets/imges/icons/database.png"/>
+                <h1 class="mt-3">Wide Database Support</h1>
+                <p>Seamlessly supports popular SQL and NoSQL databases including Azure Data Tables, Cosmos DB, MongoDB, MySQL, SQLite, SQL Server, PostgreSQL, and Oracle.</p>
             </div>
         </div>
 
-        <!-- Card 5 -->
         <div class="col-md-4 mb-4">
-            <div class="card-benefit-bg features-benefit5" style="background-image: url('./assets/imges/icons/card-3.svg');">
-                <img src="./assets/imges/icons/check.png" class="benefit-icon">
-                <div class="card-body text-white">
-                    <h5 class="card-title mt-3">Comprehensive Documentation</h5>
-                    <p class="card-text">Detailed documentation covering supported data types, operations, and implementation examples.</p>
-                </div>
+            <div class="benefit-card">
+                <img class="feature-benefit-icons "  src="./assets/imges/icons/security.png"/>
+                <h1 class="mt-3">Security</h1>
+                <p>Eliminates injection attacks by building LINQ expressions using individually mapped functions and parsed data.</p>
             </div>
         </div>
 
-        <!-- Card 6 -->
         <div class="col-md-4 mb-4">
-            <div class="card-benefit-bg features-benefit6" style="background-image: url('./assets/imges/icons/card-3.svg');">
-                <img src="./assets/imges/icons/check.png" class="benefit-icon">
-                <div class="card-body text-white">
-                    <h5 class="card-title mt-3">Flexible Query Construction</h5>
-                    <p class="card-text">Construct queries using the ServiceQueryRequestBuilder object, supporting a variety of operations.</p>
-                </div>
+            <div class="benefit-card">
+                <img class="feature-benefit-icons "  src="./assets/imges/icons/query.png"/>
+                <h1 class="mt-3">Dynamic Querying</h1>
+                <p>Allows clients and front-end applications to dynamically query data through a standardized endpoint.</p>
             </div>
         </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="benefit-card">
+                <img class="feature-benefit-icons "  src="./assets/imges/icons/js.png"/>
+                <h1 class="mt-3">JavaScript Integration</h1>
+                <p>Easy integration with front-end applications using the ServiceQuery.js JavaScript file for building request queries.</p>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="benefit-card">
+                <img class="feature-benefit-icons "  src="./assets/imges/icons/documentation.png"/>
+                <h1 class="mt-3">Comprehensive Documentation</h1>
+                <p>Detailed documentation covering supported data types, operations, and implementation examples.</p>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="benefit-card">
+                <img class="feature-benefit-icons "  src="./assets/imges/icons/construction.png"/>
+                <h1 class="mt-3">Flexible Query Construction</h1>
+                <p>Construct queries using the ServiceQueryRequestBuilder object, supporting a variety of operations.</p>
+            </div>
+        </div>
+
+        <!-- Hidden Cards -->
+        <div class="col-md-4 mb-4 hidden">
+            <div class="benefit-card">
+                <img class="feature-benefit-icons "  src="./assets/imges/icons/fun1.png"/>
+                <h1 class="mt-3">Creative</h1>
+                <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4 hidden">
+            <div class="benefit-card">
+                <img class="feature-benefit-icons "  src="./assets/imges/icons/fun2.png"/>
+                <h1 class="mt-3">Engineering</h1>
+                <p>Maecenas faucibus mollis interdum.</p>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4 hidden">
+            <div class="benefit-card">
+                <img class="feature-benefit-icons "  src="./assets/imges/icons/fun3.png"/>
+                <h1 class="mt-3">Documentation</h1>
+                <p>Vivamus sagittis lacus vel augue laoreet rutrum.</p>
+            </div>
+        </div>
+
+
+<!-- more cards -->
+
+<div class="col-md-4 mb-4 hidden">
+    <div class="benefit-card">
+        <img class="feature-benefit-icons "  src="./assets/imges/icons/fun4.png"/>
+        <h1 class="mt-3">Nullability Functions</h1>
+        <p>Handle null and non-null values effectively in your queries.</p>
+    </div>
+</div>
+
+<div class="col-md-4 mb-4 hidden">
+    <div class="benefit-card">
+        <img class="feature-benefit-icons "  src="./assets/imges/icons/pagging.png"/>
+        <h1 class="mt-3">Paging Functions</h1>
+        <p>Easily implement pagination with page number, page size, and include count functions.</p>
+    </div>
+</div>
+
+<div class="col-md-4 mb-4 hidden">
+    <div class="benefit-card">
+        <img class="feature-benefit-icons "  src="./assets/imges/icons/select.png"/>
+        <h1 class="mt-3">Selecting Functions</h1>
+        <p>Customize query results by selecting specific properties and using distinct queries.</p>
+    </div>
+</div>
+
+<div class="col-md-4 mb-4 hidden">
+    <div class="benefit-card">
+        <img class="feature-benefit-icons "  src="./assets/imges/icons/sort.png"/>
+        <h1 class="mt-3">Sorting Functions</h1>
+        <p>Sort results in ascending or descending order.</p>
+    </div>
+</div>
+
+<div class="col-md-4 mb-4 hidden">
+    <div class="benefit-card">
+        <img class="feature-benefit-icons "  src="./assets/imges/icons/secure.png"/>
+        <h1 class="mt-3">Role-Based Security</h1>
+        <p>Restrict properties based on user roles to enhance data security.</p>
+    </div>
+</div>
+
+<div class="col-md-4 mb-4 hidden">
+    <div class="benefit-card">
+        <img class="feature-benefit-icons "  src="./assets/imges/icons/support.png"/>
+        <h1 class="mt-3">Sharding Support</h1>
+        <p>Add expressions to queries to target specific data segments for efficient retrieval and security.</p>
+    </div>
+</div>
+
+<div class="col-md-4 mb-4 hidden">
+    <div class="benefit-card">
+        <img class="feature-benefit-icons "  src="./assets/imges/icons/server.png"/>
+        <h1 class="mt-3">Server-Side Customization</h1>
+        <p>Customize server-side query processing with the ServiceQueryOptions object.</p>
+    </div>
+</div>
+
+<div class="col-md-4 mb-4 hidden">
+    <div class="benefit-card">
+        <img class="feature-benefit-icons "  src="./assets/imges/icons/example.png"/>
+        <h1 class="mt-3">Example Implementations</h1>
+        <p>Explore detailed examples for various database storage providers in the examples folder.</p>
+    </div>
+</div>
+
+<div class="col-md-4 mb-4 hidden">
+    <div class="benefit-card">
+        <img class="feature-benefit-icons "  src="./assets/imges/icons/board.png"/>
+        <h1 class="mt-3">Discussion Board</h1>
+        <p>Join the community discussion board to post questions, share feedback, and collaborate with other users.</p>
+    </div>
+</div>
+
+<div class="col-md-4 mb-4 hidden">
+    <div class="benefit-card">
+        <img class="feature-benefit-icons "  src="./assets/imges/icons/support.png"/>
+        <h1 class="mt-3">Direct Support</h1>
+        <p>Access direct support via email for any issues or inquiries related to ServiceQuery with our consulting services</p>
+    </div>
+</div>
+
+<div class="col-md-4 mb-4 hidden">
+    <div class="benefit-card">
+        <img class="feature-benefit-icons "  src="./assets/imges/icons/board.png"/>
+        <h1 class="mt-3">Open Source</h1>
+        <p>ServiceQuery is available under the MIT permissive license, allowing for community contributions and transparency.</p>
+    </div>
+</div>
+
+<div class="col-md-4 mb-4 hidden">
+    <div class="benefit-card">
+        <img class="feature-benefit-icons "  src="./assets/imges/icons/ai.png"/>
+        <h1 class="mt-3">Artificial Intelligence</h1>
+        <p>Query your database with simple human text input using OpenAI GPT LLMs.</p>
+    </div>
+</div>
+
+
+
+
+
+
     </div>
 
-    <div id="extraCards" class="row d-none">
-        <!-- Extra Cards (Can duplicate as needed) -->
-        <div class="col-md-4 mb-4">
-            <div class="card-benefit-bg features-benefit4" style="background-image: url('./assets/imges/icons/card-3.svg');">
-                <img src="./assets/imges/icons/check.png" class="benefit-icon">
-                <div class="card-body text-white">
-                    <h5 class="card-title mt-3">JavaScript Integration</h5>
-                    <p class="card-text">Easy integration with front-end applications using the ServiceQuery.js JavaScript file for building request queries.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-4 mb-4">
-            <div class="card-benefit-bg features-benefit5" style="background-image: url('./assets/imges/icons/card-3.svg');">
-                <img src="./assets/imges/icons/check.png" class="benefit-icon">
-                <div class="card-body text-white">
-                    <h5 class="card-title mt-3">Comprehensive Documentation</h5>
-                    <p class="card-text">Detailed documentation covering supported data types, operations, and implementation examples.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-4 mb-4">
-            <div class="card-benefit-bg features-benefit6" style="background-image: url('./assets/imges/icons/card-3.svg');">
-                <img src="./assets/imges/icons/check.png" class="benefit-icon">
-                <div class="card-body text-white">
-                    <h5 class="card-title mt-3">Flexible Query Construction</h5>
-                    <p class="card-text">Construct queries using the ServiceQueryRequestBuilder object, supporting a variety of operations.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="text-center mt-4">
-        <button id="seeAllBtn" class="gradient-btn">See all</button>
-    </div>
+    <button id="show-more" class="btn btn-primary mt-3">Show More</button>
 </div>
 
 <!-- feature section end -->
@@ -229,151 +315,134 @@
 
 <!--  -->
 
-<div class="container my-5">
-    <div class="text-center mb-5">
-        <h2 class="display-4 text-light">Query Operations</h2>
-        <p class="lead text-muted">Note: Not all database providers support all operations or data types. View our documentation for each provider to know what is available.</p>
-    </div>
+<section class="bg-light2 py-5 px-3">
+    <div class="container">
+        <h2 class="operation-section-heading h3 text-left  mb-5" >Database Query Operations</h2>
+        <p class=" operation-section-para text-left  mb-5" >
+            Note: Not all database providers support all operations or data types. View our documentation for each provider to know what is available.
+        </p>
 
-    <div class="row">
-        <!-- Aggregate Operations Card -->
-        <div class="col-lg-3 col-md-4 mb-4">
-            <div class="card equal-height" style="background: linear-gradient(135deg, #1a1a1a, #0e0c15); border: none; border-radius: 15px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);">
-                <div class="card-header text-light" style="border-bottom: 2px solid #007bff; border-top-left-radius: 15px; border-top-right-radius: 15px;">
-                    <h5 class="mb-0">Aggregate Operations</h5>
-                </div>
-                <div class="card-body d-flex flex-column justify-content-between text-light">
-                    <div>
-                        <div class="operation"><img src="./assets/imges/icons/check.png" alt="Tick" class="me-2"> Average</div>
-                        <div class="operation"><img src="./assets/imges/icons/check.png" alt="Tick" class="me-2"> Count</div>
-                        <div class="operation"><img src="./assets/imges/icons/check.png" alt="Tick" class="me-2"> Maximum</div>
-                        <div class="operation"><img src="./assets/imges/icons/check.png" alt="Tick" class="me-2"> Minimum</div>
-                        <div class="operation"><img src="./assets/imges/icons/check.png" alt="Tick" class="me-2"> Sum</div>
+        <div class="row g-4">
+            <!-- Aggregate Operations -->
+            <div class="col-md-3">
+                <div class="h-100 gradient-card-1 rounded-3">
+                    <div class="card-body">
+                        <h4 class="card-title text-light mb-3">Aggregate Operations</h4>
+                        <ul class="list-unstyled">
+                            <li class="operation"><img src="./assets/imges/icons/check.png" alt="check" class="me-2" />Average</li>
+                            <li class="operation"><img src="./assets/imges/icons/check.png" alt="check" class="me-2" />Count</li>
+                            <li class="operation"><img src="./assets/imges/icons/check.png" alt="check" class="me-2" />Maximum</li>
+                            <li class="operation"><img src="./assets/imges/icons/check.png" alt="check" class="me-2" />Minimum</li>
+                            <li class="operation"><img src="./assets/imges/icons/check.png" alt="check" class="me-2" />Sum</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Comparison Operations Card -->
-        <div class="col-lg-3 col-md-4 mb-4">
-            <div class="card equal-height" style="background: linear-gradient(135deg, #1a1a1a, #0e0c15); border: none; border-radius: 15px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);">
-                <div class="card-header text-light" style="border-bottom: 2px solid #007bff; border-top-left-radius: 15px; border-top-right-radius: 15px;">
-                    <h5 class="mb-0">Comparison Operations</h5>
-                </div>
-                <div class="card-body d-flex flex-column justify-content-between text-light">
-                    <div>
-                        <div class="operation"><img src="./assets/imges/icons/check.png" alt="Tick" class="me-2"> Between</div>
-                        <div class="operation"><img src="./assets/imges/icons/check.png" alt="Tick" class="me-2"> Equal</div>
-                        <div class="operation"><img src="./assets/imges/icons/check.png" alt="Tick" class="me-2"> Not Equal</div>
-                        <div class="operation"><img src="./assets/imges/icons/check.png" alt="Tick" class="me-2"> Less Than</div>
-                        <div class="operation"><img src="./assets/imges/icons/check.png" alt="Tick" class="me-2"> Less Than or Equal</div>
-                        <div class="operation"><img src="./assets/imges/icons/check.png" alt="Tick" class="me-2"> Greater Than</div>
-                        <div class="operation"><img src="./assets/imges/icons/check.png" alt="Tick" class="me-2"> Greater Than or Equal</div>
-                        <div class="operation"><img src="./assets/imges/icons/check.png" alt="Tick" class="me-2"> In Set</div>
-                        <div class="operation"><img src="./assets/imges/icons/check.png" alt="Tick" class="me-2"> Not In Set</div>
+            <!-- Comparison Operations -->
+            <div class="col-md-3">
+                <div class="h-100 gradient-card-2 rounded-3">
+                    <div class="card-body">
+                        <h4 class="card-title text-light mb-3">Comparison Operations</h4>
+                        <ul class="list-unstyled">
+                            <li class="operation"><img src="./assets/imges/icons/check.png" alt="check" class="me-2" />Between</li>
+                            <li class="operation"><img src="./assets/imges/icons/check.png" alt="check" class="me-2" />Equal</li>
+                            <li class="operation"><img src="./assets/imges/icons/check.png" alt="check" class="me-2" />Not Equal</li>
+                            <li class="operation"><img src="./assets/imges/icons/check.png" alt="check" class="me-2" />Less Than</li>
+                            <li class="operation"><img src="./assets/imges/icons/check.png" alt="check" class="me-2" />Less Than or Equal</li>
+                            <li class="operation"><img src="./assets/imges/icons/check.png" alt="check" class="me-2" />Greater Than</li>
+                            <li class="operation"><img src="./assets/imges/icons/check.png" alt="check" class="me-2" />Greater Than or Equal</li>
+                            <li class="operation"><img src="./assets/imges/icons/check.png" alt="check" class="me-2" />In Set</li>
+                            <li class="operation"><img src="./assets/imges/icons/check.png" alt="check" class="me-2" />Not In Set</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Comparison Operations (String) Card -->
-        <div class="col-lg-3 col-md-4 mb-4">
-            <div class="card equal-height" style="background: linear-gradient(135deg, #1a1a1a, #0e0c15); border: none; border-radius: 15px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);">
-                <div class="card-header text-light" style="border-bottom: 2px solid #007bff; border-top-left-radius: 15px; border-top-right-radius: 15px;">
-                    <h5 class="mb-0">Comparison Operations (String)</h5>
-                </div>
-                <div class="card-body d-flex flex-column justify-content-between text-light">
-                    <div>
-                        <div class="operation"><img src="./assets/imges/icons/check.png" alt="Tick" class="me-2"> StartsWith</div>
-                        <div class="operation"><img src="./assets/imges/icons/check.png" alt="Tick" class="me-2"> Contains</div>
-                        <div class="operation"><img src="./assets/imges/icons/check.png" alt="Tick" class="me-2"> EndsWith</div>
+            <!-- String Comparison Operations -->
+            <div class="col-md-3">
+                <div class="h-100 gradient-card-3 rounded-3">
+                    <div class="card-body">
+                        <h4 class="card-title text-light mb-3">String Comparison Operations</h4>
+                        <ul class="list-unstyled">
+                            <li class="operation"><img src="./assets/imges/icons/check.png" alt="check" class="me-2" />StartsWith</li>
+                            <li class="operation"><img src="./assets/imges/icons/check.png" alt="check" class="me-2" />Contains</li>
+                            <li class="operation"><img src="./assets/imges/icons/check.png" alt="check" class="me-2" />EndsWith</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Grouping Expressions Card -->
-        <div class="col-lg-3 col-md-4 mb-4">
-            <div class="card equal-height" style="background: linear-gradient(135deg, #1a1a1a, #0e0c15); border: none; border-radius: 15px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);">
-                <div class="card-header text-light" style="border-bottom: 2px solid #007bff; border-top-left-radius: 15px; border-top-right-radius: 15px;">
-                    <h5 class="mb-0">Grouping Expressions</h5>
-                </div>
-                <div class="card-body d-flex flex-column justify-content-between text-light">
-                    <div>
-                        <div class="operation"><img src="./assets/imges/icons/check.png" alt="Tick" class="me-2"> Begin</div>
-                        <div class="operation"><img src="./assets/imges/icons/check.png" alt="Tick" class="me-2"> End</div>
-                        <div class="operation"><img src="./assets/imges/icons/check.png" alt="Tick" class="me-2"> And</div>
-                        <div class="operation"><img src="./assets/imges/icons/check.png" alt="Tick" class="me-2"> Or</div>
+            <!-- Grouping Expressions -->
+            <div class="col-md-3">
+                <div class="h-100 gradient-card-4 rounded-3">
+                    <div class="card-body">
+                        <h4 class="card-title text-light mb-3">Grouping Expressions</h4>
+                        <ul class="list-unstyled">
+                            <li class="operation"><img src="./assets/imges/icons/check.png" alt="check" class="me-2" />Begin</li>
+                            <li class="operation"><img src="./assets/imges/icons/check.png" alt="check" class="me-2" />End</li>
+                            <li class="operation"><img src="./assets/imges/icons/check.png" alt="check" class="me-2" />And</li>
+                            <li class="operation"><img src="./assets/imges/icons/check.png" alt="check" class="me-2" />Or</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Nullability Expressions Card -->
-        <div class="col-lg-3 col-md-4 mb-4">
-            <div class="card equal-height" style="background: linear-gradient(135deg, #1a1a1a, #0e0c15); border: none; border-radius: 15px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);">
-                <div class="card-header text-light" style="border-bottom: 2px solid #007bff; border-top-left-radius: 15px; border-top-right-radius: 15px;">
-                    <h5 class="mb-0">Nullability Expressions</h5>
-                </div>
-                <div class="card-body d-flex flex-column justify-content-between text-light">
-                    <div>
-                        <div class="operation"><img src="./assets/imges/icons/check.png" alt="Tick" class="me-2"> Is Null</div>
-                        <div class="operation"><img src="./assets/imges/icons/check.png" alt="Tick" class="me-2"> Is Not Null</div>
+            <!-- Nullability Expressions -->
+            <div class="col-md-3">
+                <div class="h-100 gradient-card-1 rounded-3">
+                    <div class="card-body">
+                        <h4 class="card-title text-light mb-3">Nullability Expressions</h4>
+                        <ul class="list-unstyled">
+                            <li class="operation"><img src="./assets/imges/icons/check.png" alt="check" class="me-2" />Is Null</li>
+                            <li class="operation"><img src="./assets/imges/icons/check.png" alt="check" class="me-2" />Is Not Null</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Select Operations Card -->
-        <div class="col-lg-3 col-md-4 mb-4">
-            <div class="card equal-height" style="background: linear-gradient(135deg, #1a1a1a, #0e0c15); border: none; border-radius: 15px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);">
-                <div class="card-header text-light" style="border-bottom: 2px solid #007bff; border-top-left-radius: 15px; border-top-right-radius: 15px;">
-                    <h5 class="mb-0">Select Operations</h5>
-                </div>
-                <div class="card-body d-flex flex-column justify-content-between text-light">
-                    <div>
-                        <div class="operation"><img src="./assets/imges/icons/check.png" alt="Tick" class="me-2"> Select</div>
-                        <div class="operation"><img src="./assets/imges/icons/check.png" alt="Tick" class="me-2"> Distinct</div>
+            <!-- Select Operations -->
+            <div class="col-md-3">
+                <div class="h-100 gradient-card-2 rounded-3">
+                    <div class="card-body">
+                        <h4 class="card-title text-light mb-3">Select Operations</h4>
+                        <ul class="list-unstyled">
+                            <li class="operation"><img src="./assets/imges/icons/check.png" alt="check" class="me-2" />Select</li>
+                            <li class="operation"><img src="./assets/imges/icons/check.png" alt="check" class="me-2" />Distinct</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Paging Operations Card -->
-        <div class="col-lg-3 col-md-4 mb-4">
-            <div class="card equal-height" style="background: linear-gradient(135deg, #1a1a1a, #0e0c15); border: none; border-radius: 15px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);">
-                <div class="card-header text-light" style="border-bottom: 2px solid #007bff; border-top-left-radius: 15px; border-top-right-radius: 15px;">
-                    <h5 class="mb-0">Paging Operations</h5>
-                </div>
-                <div class="card-body d-flex flex-column justify-content-between text-light">
-                    <div>
-                        <div class="operation"><img src="./assets/imges/icons/check.png" alt="Tick" class="me-2"> Page Number</div>
-                        <div class="operation"><img src="./assets/imges/icons/check.png" alt="Tick" class="me-2"> Page Size</div>
-                        <div class="operation"><img src="./assets/imges/icons/check.png" alt="Tick" class="me-2"> Include Count</div>
+            <!-- Paging Operations -->
+            <div class="col-md-3">
+                <div class="h-100 gradient-card-3 rounded-3">
+                    <div class="card-body">
+                        <h4 class="card-title text-light mb-3">Paging Operations</h4>
+                        <ul class="list-unstyled">
+                            <li class="operation"><img src="./assets/imges/icons/check.png" alt="check" class="me-2" />Page Number</li>
+                            <li class="operation"><img src="./assets/imges/icons/check.png" alt="check" class="me-2" />Page Size</li>
+                            <li class="operation"><img src="./assets/imges/icons/check.png" alt="check" class="me-2" />Include Count</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Sorting Operations Card -->
-        <div class="col-lg-3 col-md-4 mb-4">
-            <div class="card equal-height" style="background: linear-gradient(135deg, #1a1a1a, #0e0c15); border: none; border-radius: 15px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);">
-                <div class="card-header text-light" style="border-bottom: 2px solid #007bff; border-top-left-radius: 15px; border-top-right-radius: 15px;">
-                    <h5 class="mb-0">Sorting Operations</h5>
-                </div>
-                <div class="card-body d-flex flex-column justify-content-between text-light">
-                    <div>
-                        <div class="operation"><img src="./assets/imges/icons/check.png" alt="Tick" class="me-2"> Ascending</div>
-                        <div class="operation"><img src="./assets/imges/icons/check.png" alt="Tick" class="me-2"> Descending</div>
+            <!-- Sorting Operations -->
+            <div class="col-md-3">
+                <div class="h-100 gradient-card-4 rounded-3">
+                    <div class="card-body">
+                        <h4 class="card-title text-light mb-3">Sorting Operations</h4>
+                        <ul class="list-unstyled">
+                            <li class="operation"><img src="./assets/imges/icons/check.png" alt="check" class="me-2" />Ascending</li>
+                            <li class="operation"><img src="./assets/imges/icons/check.png" alt="check" class="me-2" />Descending</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-
-
-
+</section>
 
 <!-- video section start -->
 <section>
@@ -511,15 +580,27 @@
 
 
 <script>
-    document.getElementById('seeAllBtn').addEventListener('click', function() {
-        var extraCards = document.getElementById('extraCards');
-        if (extraCards.classList.contains('d-none')) {
-            extraCards.classList.remove('d-none');
-            this.textContent = 'See less';
-        } else {
-            extraCards.classList.add('d-none');
-            this.textContent = 'See all';
+     document.addEventListener('DOMContentLoaded', function() {
+        const showMoreButton = document.getElementById('show-more');
+        const benefitCards = document.getElementById('benefit-cards');
+
+        // Initially hide the last set of cards
+        const allCards = benefitCards.children;
+        for (let i = 6; i < allCards.length; i++) {
+            allCards[i].classList.add('hidden');
         }
+
+        showMoreButton.addEventListener('click', function() {
+            for (let i = 6; i < allCards.length; i++) {
+                allCards[i].classList.toggle('hidden');
+            }
+            // Change button text or disable it after showing all cards
+            if (showMoreButton.textContent === 'Show More') {
+                showMoreButton.textContent = 'Show Less';
+            } else {
+                showMoreButton.textContent = 'Show More';
+            }
+        });
     });
 </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

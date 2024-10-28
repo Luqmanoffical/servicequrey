@@ -212,64 +212,68 @@ label {
 /* Hero section start */
 .home-hero {
     position: relative;
-    height: 100vh;
-    /* Full viewport height */
-    width: 100%;
-    /* Full width */
-    background-image: url('../imges/img/BgVector.png');
-    /* Background image */
-    background-size: cover;
-    /* Cover the entire section */
-    background-position: center;
-    /* Position the image */
-    overflow: hidden;
-    /* Prevent overflow */
+    min-height: calc(110vh - 70px); /* Adjust height based on header */
+    width: 100%; /* Full width */
+    background-image: url('../imges/img/BgVector.png'); /* Background image */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Position the image */
+    overflow: hidden; /* Prevent overflow */
+    padding-top: 110px; /* Add padding equal to header height */
 }
 
 .hero-container {
     display: flex;
-    align-items: center;
-    /* Center items vertically */
-    justify-content: space-between;
-    /* Space between text and image */
-    height: 100%;
-    /* Full height of the hero section */
-    padding: 0 50px;
-    /* Padding on the sides */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    height: 100%; /* Full height of the hero section */
+    padding: 0 50px; /* Padding on the sides */
+    text-align: center; /* Center text */
 }
-
 
 .hero-content {
     flex: 1;
-    /* Take up available space */
-    margin-right: 20px;
+    padding-left: 30px;
     color: white;
+    z-index: 1; /* Ensure content is above background */
 }
 
 .hero-content h1 {
     font-size: 40px;
+    font-weight: bold;
+}
+
+.hero-content span {
+    font-size: 50px;
+    background: linear-gradient(135deg, #e786e2c0, #763bb9, #e779e2); /* Gradient colors */
+    -webkit-background-clip: text; /* Clips the background to the text */
+    -webkit-text-fill-color: transparent; /* Makes the text color transparent */
+    font-weight: bold;
+    display: inline-block; /* Required for background clip to work */
 }
 
 .hero-content p {
     margin-top: 20px;
-    max-width: 500px;
-    /* Limit width of the paragraph */
+    max-width: 600px; /* Limit width of the paragraph */
     text-align: justify;
     font-size: larger;
 }
 
 .hero-image {
-    flex: 1;
-    /* Take up available space */
-    text-align: center;
-    /* Center image horizontally */
+    flex: 1; /* Take up available space */
+    text-align: center; /* Center image horizontally */
+    z-index: 1; /* Ensure image is above background */
 }
 
 .hero-image img {
-    max-width: 100%;
-    /* Image should scale with its container */
+    max-width: 60%; /* Image should scale with its container */
     height: auto;
-    /* Maintain aspect ratio */
+    margin-left: 50px; /* Maintain aspect ratio */
+}
+
+/* Space between hero section and next section */
+#next-section {
+    margin-top: 60px; /* Space between sections */
+    padding: 20px; /* Optional padding for content */
 }
 
 /* Responsive styles */
@@ -281,39 +285,41 @@ label {
 
 @media (max-width: 768px) {
     .hero-container {
-        flex-direction: column;
-        /* Stack image and text vertically */
-        text-align: center;
-        /* Center text and image */
+        flex-direction: column; /* Stack image and text vertically */
+        text-align: center; /* Center text and image */
     }
 
     .hero-image {
-        order: -1;
-        /* Move the image to the top */
+        order: -1; /* Move the image to the top */
         margin-bottom: 20px;
-        /* Add some spacing between the image and text */
-    }
-
-    .hero-content {
-        margin: 0;
-        /* Remove side margins */
-        max-width: 100%;
-        /* Full width for text */
-    }
-
-    .hero-content h1 {
-        font-size: 32px;
-        /* Reduce font size for smaller screens */
-    }
-
-    .hero-content p {
-        font-size: 16px;
-        /* Reduce font size for smaller screens */
+        margin-right: 40px; /* Add some spacing between the image and text */
     }
 
     .hero-image img {
-        max-width: 80%;
-        /* Scale down image for smaller screens */
+        width: 100%;
+
+    }
+
+    .hero-content {
+        margin: 0; /* Remove side margins */
+        max-width: 100%; /* Full width for text */
+    }
+
+    .hero-content h1 {
+        font-size: 20px; /* Reduce font size for smaller screens */
+    }
+
+    .hero-content span {
+        font-size: 32px;
+         /* Reduce font size for smaller screens */
+    }
+
+    .hero-content p {
+        font-size: 16px; /* Reduce font size for smaller screens */
+    }
+
+    .hero-image img {
+        max-width: 80%; /* Scale down image for smaller screens */
     }
 }
 
@@ -323,18 +329,15 @@ label {
     }
 
     .hero-content h1 {
-        font-size: 28px;
-        /* Smaller font for mobile */
+        font-size: 28px; /* Smaller font for mobile */
     }
 
     .hero-content p {
-        font-size: 14px;
-        /* Smaller font for mobile */
+        font-size: 14px; /* Smaller font for mobile */
     }
 
     .hero-image img {
-        max-width: 100%;
-        /* Full width image for small devices */
+        max-width: 100%; /* Full width image for small devices */
     }
 }
 
@@ -354,22 +357,21 @@ label {
     border-radius: 10px;
     font-size: 16px;
     font-weight: 500;
-    transition: all 0.3s ease;
+   
 }
 
 .gradient-btn:hover {
-    background: linear-gradient(#ffffff, #ffffff) padding-box,
-        linear-gradient(to right, #ff0080, #ff8c00, #40e0d0, #8a2be2) border-box;
-    color: #1a1a2e;
+   
+    color: #550783;
 }
 
 
 
 @media (max-width: 768px) {
     .gradient-btn {
-        width: 100%;
+       
         /* Full width button on mobile */
-        padding: 15px;
+        
         /* Increased padding for better touch target */
     }
 }
@@ -470,98 +472,42 @@ label {
 
 
 /* logos section start */
-.logosimg {
-    height: 400px;
-    width: 100%;
-    /* Make it responsive */
-    max-width: 380px;
-    /* Maintain a max width */
-    margin-left: 20px;
+
+/* Company Logo Section Styles */
+.company-logo-section {
+    border: 1px solid rgba(128, 128, 128, 0.5);
 }
 
-.logos-section {
-    border: 1px solid rgba(128, 128, 128, 0.384);
-    padding: 20px;
-    /* Add some padding */
-    display: flex;
-    flex-direction: column;
-    /* Stack children vertically */
-    align-items: center;
-    /* Center content */
+.company-logo-title {
+    color: #333;
+    font-size: 20px; /* Change to your preferred color */
+  
 }
 
-.logos-section .row {
-    display: flex;
-    flex-wrap: wrap;
-    /* Allow wrapping */
-    justify-content: space-between;
-    /* Space out items */
-    width: 100%;
-    /* Full width */
-}
 
-.col-6 {
-    flex: 1 1 100%;
-    /* Full width on small screens */
-    max-width: 100%;
-    /* Prevent overflow */
-}
 
-@media (min-width: 768px) {
-    .col-6 {
-        flex: 1 1 45%;
-        /* Two columns on medium screens */
-        max-width: 45%;
-        /* Set max width */
-    }
-}
-
-@media (min-width: 992px) {
-    .col-6 {
-        flex: 1 1 48%;
-        /* Two columns on larger screens */
-        max-width: 48%;
-        /* Set max width */
-    }
-}
-
-.with-icon {
+.company-logo-text {
     position: relative;
-    padding-left: 40px;
-    /* Space for the icon */
-    margin-bottom: 15px;
-    border-bottom: 1px solid #ccc;
-    /* Underline each paragraph */
-    font-family: 'Poppins', sans-serif;
-}
-
-.with-icon::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 25px;
-    height: 25px;
-    background-image: url('../icons/check.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.logos-section h1 {
-    color: white;
-}
-
-.logos-section p {
+    padding-left: 30px; /* Space for the icon */
+    margin-bottom: 15px; /* Space between paragraphs */
+    border-bottom: 1px solid #ccc; /* Add bottom border */
+    padding-bottom: 10px; /* Space between text and border */
     margin-top: 30px;
 }
 
-.logos-section .logoscurve {
-    width: 200px;
-    height: auto;
-    /* Allow height to adjust */
-    margin-right: 3%;
+.company-logo-text::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%); /* Center the icon vertically */
+    width: 20px; /* Adjust icon size */
+    height: 20px; /* Adjust icon size */
+    background-image: url('../imges/icons/check.png'); /* Path to your check icon */
+    background-size: contain;
+    background-repeat: no-repeat;
 }
+
 
 /* logos section end */
 
@@ -573,7 +519,7 @@ label {
 
 
 
-/* next section image with point section styles start*/
+
 /* Image with Points Section Styles Start */
 .image-card-section {
     display: flex;
@@ -729,6 +675,7 @@ label {
    /* -------------------------feature page start--------------------------------- */
 
  .feature-bg-theme {
+    
     background-color: #0e0c14;
 }
 
@@ -737,10 +684,14 @@ label {
     display: flex;
     align-items: center;
     padding: 50px 0;
+    
+    
+
 }
 
 .feature-hero p {
     text-align: justify;
+    
 }
 
 .feature-hero img {
@@ -783,31 +734,31 @@ label {
 
 
 /* feature section start */
-
-
-.card-benefit-bg {
-    background-size: cover;          /* Ensures the background image covers the entire card */
-    background-position: center;     /* Centers the background image */
-    height: 330px;                   /* Fixed height for the card */
-    border-radius: 15px;             /* Optional: Adds rounded corners for a smoother look */
-    transition: transform 0.3s ease;
-    padding: 20px; /* Optional: Smooth transition for hover effects */
+.benefit-card {
+    border: 1px solid transparent;
+    border-radius: 11px;
+    background: linear-gradient(#0e0c14, #0e0c14), linear-gradient(to right, #8a2be2, #9c2278, #8a2be2);
+    background-clip: padding-box, border-box;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(79, 0, 153, 0.432);
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Align items vertically */
+     /* Space out items */
+    height: 300px; /* Set a fixed height for all cards */
 }
 
-.card-text{
-    max-width: 300px;
-    
+.feature-benefit-icons{
+    height: 35px;
+    width: 35px;
 }
 
 
-.benefit-icon{
-    height: 60px;
-}
+.hidden {
+    display: none;
+  }
 
-/* Optional: Add a hover effect */
-.card-benefit-bg:hover {
-    transform: scale(1.05);          /* Slightly enlarges the card on hover */
-}
+/* feature section end */
+
 
 
 /* video section */
@@ -829,35 +780,104 @@ label {
 
 
 /* operation section start */
+
+
+
+
+
+
+.gradient-card-1 {
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(202, 3, 202, 0.596);
+    background: linear-gradient(135deg, #1a1a2e,#0e0c15); /* Gradient background */
+    color: #fff; /* White text */
+}
+
+.gradient-card-2 {
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(202, 3, 202, 0.596);
+    background: linear-gradient(135deg, #1a1a2e,#0e0c15); /* Different gradient */
+    color: #fff;
+}
+
+.gradient-card-3 {
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(202, 3, 202, 0.596);
+    background: linear-gradient(135deg, #1a1a2e,#0e0c15); /* Another gradient */
+    color: #fff;
+}
+
+.gradient-card-4 {
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(202, 3, 202, 0.596);
+    background: linear-gradient(135deg, #1a1a2e,#0e0c15); /* Another gradient */
+    color: #fff;
+}
+
+.card-title {
+    
+    font-size: 1.25em; /* Larger title font */
+    /* Center title */
+}
+
+.list-unstyled {
+    padding: 0; /* Remove default padding */
+}
+
 .operation {
+    
     display: flex;
     align-items: center;
     margin: 10px 0;
-    font-size: 1.1em;
+    font-size: 1.1em; /* Font size */
+    transition: background-color 0.3s; /* Smooth background change */
+    border-radius: 5px; /* Rounded corners */
 }
+
+.operation:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Light hover effect */
+}
+
+.operation-section-heading{
+    color: #ffffff;
+}
+
+.operation-section-para{
+    color: #ffffff;
+}
+
 .operation img {
-    width: 20px;
-    height: 20px;
-}
-.equal-height {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-
-    height: 20%;
-    margin-right:3%;
-}
-.Link{
-    color: purple;
-    cursor: pointer;
-text-decoration: none  !important;
-}
-.Link:hover{
-text-decoration: underline !important;
-
-color: purple !important;
+    width: 20px; /* Icon width */
+    height: 20px; /* Icon height */
+    margin-right: 10px; /* Space between icon and text */
 }
 
+.text-muted {
+    color: #6c757d; /* Muted text color */
+}
+
+.text-center {
+    text-align: center; /* Center alignment for text */
+}
+
+.py-5 {
+    padding-top: 3rem; /* Padding top */
+    padding-bottom: 3rem; /* Padding bottom */
+}
+
+.px-3 {
+    padding-left: 1rem; /* Padding left */
+    padding-right: 1rem; /* Padding right */
+}
+
+.container {
+    max-width: 1200px; /* Max width for the container */
+    margin: auto; /* Center the container */
+}
+
+
+
+/* operation section end */
 /* Custom btn */
 .custom-btn {
     background-color: transparent;
@@ -867,7 +887,7 @@ color: purple !important;
     border-image: linear-gradient(to right, #f06, #4a90e2) 1; 
 }
 
-/* Get-starded Start */
+/*................................. Get-starded Start ............................>*/
 .justify{
     text-align: justify !important;
 }
@@ -940,6 +960,7 @@ padding: 10px 50px;
     }
     
 }
+
 
 @media (min-width: 320px) and (max-width: 767px) {
 
