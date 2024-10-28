@@ -1116,9 +1116,9 @@ body .blogbody {
 
 @media (max-width: 768px) {
     .gradient-btn {
-        width: 100%;
+       
         /* Full width button on mobile */
-        padding: 15px;
+        
         /* Increased padding for better touch target */
     }
 }
