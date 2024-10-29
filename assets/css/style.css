@@ -1156,6 +1156,12 @@ body .blogbody {
     
 }
 
+
+/* random */
+
+.first-hand{
+    color: #ffffff;
+}
 .gradient-middle-card::before {
     content: '';
     position: absolute;
@@ -1241,12 +1247,14 @@ margin-top: 20px;
 .container-6-cards h3 {
     font-size: 20px;
     margin-top: 30px;
+    color: #ffffff;
 }
 
 .container-6-cards P {
 
     margin-top: 30px;
     font-size: medium;
+    color: #ffffff
 }
 
 
