@@ -924,14 +924,6 @@ body .blogbody {
 
 
 
-@media (max-width: 768px) {
-    .gradient-btn {
-       
-        /* Full width button on mobile */
-        
-        /* Increased padding for better touch target */
-    }
-}
 
 /* Home Cards Section Styles */
 .home-cards {
