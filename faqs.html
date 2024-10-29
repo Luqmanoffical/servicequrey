@@ -7,9 +7,9 @@
     <title>faq's</title>
     <link rel="icon" href="./assets/imges/icons/queryicon.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-        integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMTcE8z/f4iy8I6kDrYfeKaX+AMvHJYD4EaO9KG" crossorigin="anonymous">
+        crossorigin="anonymous">
     <link href="./assets/css/style.css" rel="stylesheet">
 
 </head>
@@ -40,7 +40,7 @@
                         <a class="features-link" href="./features.html">Features</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="getstarted-link " href="./get.html">Get Started</a>
+                        <a class="getstarted-link " href="./get.html"><span >  Get Started</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="consulting-link" href="./consulting.html">Consulting</a>
@@ -112,7 +112,8 @@
                 <span class="col-md-1">
                     <img src="./assets/imges/icons/queryicon.png" alt="icon" class="news-icon">
                 </span>
-                <span class="col-md-9 faqs-headingrow">Can I use the Cache, Logging, Notification and Security microservices if I don't purchase a subscription?</span>
+                <span class="col-md-9 faqs-headingrow">Can I use the Cache, Logging, Notification and Security
+                    microservices if I don't purchase a subscription?</span>
                 <span class="col-md-2 text-end arrow" id="arrow-2">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                         class="bi bi-chevron-down" viewBox="0 0 16 16">
@@ -237,6 +238,7 @@
 
 
 
+    <!-- Footer Section Start -->
     <!-- Footer -->
     <footer class="footer">
         <div class=" py-3 px-4 border-top border-light-subtle">
@@ -272,7 +274,6 @@
                             </li>
                         </ul>
                     </div>
-    
     
                     <!-- Social Media Section -->
                     <div class="col-12 col-md-12 col-lg-2 text-center">
@@ -342,40 +343,44 @@
             </div>
         </div>
     </footer>
-    
-    
+    <!-- Footer Section End -->
+
 
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"></script>
 <script>
-    document.addEventListener("DOMContentLoaded", () => {
-    
+    // FAQ's Accordion functionality Start
+
     function toggleAccordion(index) {
         const content = document.getElementById(`accordionContent-${index}`);
         const arrow = document.getElementById(`arrow-${index}`);
-    
+
         if (content.style.maxHeight) {
-            // Close the accordion smoothly
+            // Close the accordion
             content.style.maxHeight = null;
             arrow.classList.remove('open');
-    
-            // Allow time for the transition to complete before setting display to none
-            content.addEventListener('transitionend', function () {
-                content.style.display = "none"; // Set display to none after transition
-            }, { once: true }); // Ensures the event listener is only called once
+
+            content.addEventListener(
+                'transitionend',
+                () => {
+                    content.style.display = 'none';
+                },
+                { once: true }
+            );
         } else {
-            // Open the accordion smoothly
-            content.style.display = "block"; // Change display to block first
-            content.style.maxHeight = content.scrollHeight + 'px'; // Then set max-height
+            // Open the accordion
+            content.style.display = 'block';
+            content.style.maxHeight = content.scrollHeight + 'px';
             arrow.classList.add('open');
         }
     }
-    });
-    
+
+
+
+    // FAQ's Accordion functionality End
 </script>
-<script src="./assets/js/main.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"></script>
+
 
 </html>

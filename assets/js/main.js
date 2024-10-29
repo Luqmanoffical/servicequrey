@@ -58,36 +58,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-// FAQ's Accordion functionality Start
-
-
-// FAQ's Accordion functionality End
-
-
-
-
-
-// PRIVACY POLICY functionality START
-
-document.addEventListener("DOMContentLoaded", () => {
-    const text = "Service Query";
-    let index = 0;
-    const speed = 100; // Typing speed in milliseconds
-
-    function typeEffect() {
-        if (index < text.length) {
-            document.getElementById("privacy-policy-text").innerHTML += text.charAt(index);
-            index++;
-            setTimeout(typeEffect, speed);
-        } else {
-            // Start the blinking cursor once typing completes
-            document.getElementById("privacy-policy-cursor").style.display = "inline";
-        }
-    }
-
-    typeEffect(); // Start typing effect once DOM is loaded
-});
-// PRIVACY POLICY functionality End
 
 
 
