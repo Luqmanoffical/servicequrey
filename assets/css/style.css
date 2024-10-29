@@ -291,7 +291,7 @@ footer {
 
 @media (min-width: 320px) and (max-width: 767px) {
     .nav-logo{
-        width: 200px ;
+        width: 160px ;
         }
         
     .img-div {
@@ -315,219 +315,6 @@ footer {
 
 
 
-
-/* Login & registration page styling start */
-
-body .logBody {
-    background-color: #0e0c15;
-    /* Dark background */
-    color: #ffffff;
-    /* White text */
-    font-family: 'Poppins', sans-serif;
-    /* Add Poppins font to all text */
-}
-
-.text-bg-primary {
-    background-color: #ffffff0e !important;
-    /* Background for primary text sections */
-}
-
-.cards {
-    background-color: #68208a0e;
-    border-width: 2px;
-    border-color: #6b21a8;
-    transition: box-shadow 0.8s ease-in-out;
-    box-shadow: 0 3px 7px 7px rgba(222, 58, 237, 0.384);
-    /* Smooth transition effect */
-}
-
-.cards:hover {
-    box-shadow: 0 8px 16px 16px rgba(124, 58, 237, 0.6);
-    /* Purple shadow on hover */
-}
-
-h2,
-h3,
-p,
-label {
-    color: #ffffff;
-    /* White text for headings and labels */
-}
-
-.btn-primary {
-    background-color: #7c3aed;
-    /* Purple color */
-    color: #ffffff;
-    /* White text */
-    border: none;
-    padding: 7px 15px;
-    font-size: 15px;
-    width: 130px;
-    /* Remove border */
-}
-
-.btn-primary:hover {
-    background-color: #6b21a8;
-    /* Darker purple on hover */
-}
-
-.btn-outline-primary {
-    background-color: transparent;
-    /* Transparent for outline button */
-    color: #7c3aed;
-    /* Purple text */
-    border-color: #a134c7;
-    /* Purple border */
-}
-
-.btn-outline-primary:hover {
-    background-color: #a134c7;
-    /* Purple background on hover */
-    color: #ffffff;
-    /* White text on hover */
-    border-color: #a134c7;
-    /* Purple border */
-}
-
-.form-control {
-    background-color: #ffffff0e;
-    /* Darker input background */
-    color: #ffffff;
-    /* White text */
-    border: 1px solid #ffffff;
-    /* White border */
-}
-
-.form-control:focus {
-    background-color: #2b2b2b;
-    /* Darker background on focus */
-    border-color: #a134c7;
-    /* Purple border on focus */
-    color: #ffffff;
-    /* White text on focus */
-}
-
-.form-check-label {
-    color: #ffffff;
-    text-align: center;
-    /* White text for labels */
-}
-
-.link-secondary {
-    color: #ffffff;
-    /* White text for links */
-}
-
-.link-secondary:hover {
-    color: #a134c7;
-    /* Purple on hover */
-}
-
-.img-fluid1 {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-items: center;
-    padding-top: 110px;
-}
-
-.img-fluid2 {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-items: center;
-    padding-top: 100px;
-}
-
-.img-fluid3 {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-items: center;
-    padding-top: 80px;
-}
-
-.col-13 {
-    font-size: medium;
-    margin-top: 10px;
-    color: rgba(255, 255, 255, 0.384);
-}
-
-.col-14 {
-    font-size: medium;
-    color: gray;
-
-}
-
-.col-15 {
-    font-size: large;
-    color: #a134c7;
-}
-
-
-.logincol {
-    color: #a134c7;
-    font-size: xx-large;
-
-}
-
-.logcaption {
-    font-size: 20px;
-    color: #a134c7;
-}
-
-.col-17 {
-    font-size: 15px;
-
-}
-
-.regcaption {
-    font-size: 23px;
-    color: #a134c7;
-}
-
-.regcaption1 {
-    margin-top: 10px;
-}
-
-.regcaption2 {
-    font-size: larger;
-}
-
-.regcaption3 {
-    color: gray;
-}
-
-.input-group-text {
-    color: #ffffff;
-    background-color: transparent;
-}
-
-@keyframes scaleUp {
-    0% {
-        transform: scale(1);
-    }
-
-    100% {
-        transform: scale(1.05);
-    }
-}
-
-
-.invalid-feedback {
-    display: none;
-    /* Hidden by default */
-    color: red;
-    /* Error message color */
-}
-
-.is-invalid {
-    border-color: red;
-    /* Highlight the input border */
-}
-
-
-/* Login & registration page styling end */
 
 
 
@@ -924,14 +711,6 @@ body .blogbody {
 
 
 
-@media (max-width: 768px) {
-    .gradient-btn {
-       
-        /* Full width button on mobile */
-        
-        /* Increased padding for better touch target */
-    }
-}
 
 /* Home Cards Section Styles */
 .home-cards {
@@ -1721,6 +1500,249 @@ text-align: justify;
 }
 
 
+/* registration page styling start */
+
+
+.img-col-background {
+    background-color: #ffffff0e !important;
+    overflow: hidden;
+    border-radius: 20px 0 0 20px;
+}
+
+.register-main-div {
+    background-color: #68208a0e;
+    border: 2px solid #8a2be2;
+    border-radius: 20px;
+    transition: box-shadow 0.8s ease-in-out;
+    box-shadow: 0 3px 7px 7px rgba(222, 58, 237, 0.384);
+}
+
+.register-main-div:hover {
+    box-shadow: 0 8px 16px 16px rgba(124, 58, 237, 0.6);
+}
+
+.reg-email-field,
+.reg-pass-field,
+.reg-cnfrm-pass-field {
+    background-color: #ffffff0e;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+}
+
+.reg-email-field:focus,
+.reg-pass-field:focus,
+.reg-cnfrm-pass-field:focus {
+    background-color: #2b2b2b;
+    border-color: #8a2be2;
+    color: #ffffff;
+}
+
+.register-btn {
+    background-color: #8a2be2;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.register-btn:hover {
+    background-color: #8a2be2;
+}
+
+
+.reg-icons {
+    color: #ffffff;
+    background-color: transparent;
+    border-radius: 6px 0 0 6px;
+}
+
+.reg-micro-text {
+    font-size: 23px;
+    color: #8a2be2;
+}
+
+.reg-submit-text {
+    margin-top: 10px;
+}
+
+.reg-never-text {
+    font-size: larger;
+}
+
+.regcaption {
+    font-size: 23px;
+    color: #8a2be2;
+}
+
+.regcaption1 {
+    margin-top: 10px;
+}
+
+.regcaption2 {
+    font-size: larger;
+}
+
+.regcaption3 {
+    color: gray;
+}
+
+
+#passwordError,
+#confirmPasswordError,
+#termsError {
+    color: red;
+}
+
+
+@media (min-width: 320px) and (max-width: 420px) {
+    .reg-col-img {
+        margin: 0px !important;
+    }
+
+    .reg-micro-text,
+    .reg-servicebrick-text,
+    .reg-never-text {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .img-col-background {
+        border-bottom-left-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+    }
+
+    .reg-card-body {
+        padding: 0.5rem !important;
+    }
+
+    .reg-content-text {
+        font-size: 1rem !important;
+        text-align: center;
+        padding-top: 2rem;
+    }
+
+    .reg-terms-check {
+        font-size: 8px;
+    }
+
+    .reg-submit-text {
+        margin-top: 2rem !important;
+        font-size: 12px;
+    }
+
+    .reg-already-login-text {
+        font-size: 12px !important;
+    }
+
+    #emailError,
+    #passwordError,
+    #confirmPasswordError,
+    #termsError {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 420px) and (max-width: 575px) {
+    .reg-col-img {
+        margin: 0px !important;
+    }
+
+    .reg-micro-text,
+    .reg-servicebrick-text,
+    .reg-never-text {
+        padding: 10px;
+    }
+
+    .img-col-background {
+        border-bottom-left-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+    }
+
+    .reg-card-body {
+        padding: 0.5rem !important;
+    }
+
+    .reg-content-text {
+        text-align: center;
+        padding-top: 2rem;
+    }
+
+    .reg-submit-text {
+        margin-top: 2rem !important;
+    }
+}
+
+@media (min-width: 575px) and (max-width: 768px) {
+    .reg-col-img {
+        margin: 0px !important;
+    }
+
+    .reg-micro-text,
+    .reg-servicebrick-text,
+    .reg-never-text {
+        padding: 10px;
+    }
+
+    .img-col-background {
+        border-bottom-left-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+    }
+
+    .reg-card-body {
+        padding: 0.5rem !important;
+    }
+
+    .reg-content-text {
+        text-align: center;
+        padding-top: 2rem;
+    }
+
+    .reg-terms-check {
+        font-size: 8px;
+    }
+
+    .reg-submit-text {
+        margin-top: 2rem !important;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .reg-col-img {
+        margin: 0px !important;
+    }
+
+    .reg-micro-text,
+    .reg-servicebrick-text,
+    .reg-never-text {
+        padding: 10px;
+
+    }
+
+    .reg-micro-text {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .reg-card-body {
+        padding: 2.5rem !important;
+    }
+
+    .reg-content-text {
+        text-align: center;
+        padding-top: 2rem;
+    }
+
+    .reg-submit-text {
+        margin-top: 2rem !important;
+    }
+}
+
+/* registration page styling End
+
+
 
 
 /* Login page styling start */
@@ -1891,6 +1913,8 @@ text-align: justify;
         font-size: 16px;
     }
 }
+
+
 
 /* Login & registration page styling end */
 
