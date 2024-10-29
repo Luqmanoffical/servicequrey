@@ -1123,16 +1123,20 @@ body .blogbody {
     }
 }
 
-/* home cards section start */
-/* Gradient Card */
+/* Home Cards Section Styles */
+.home-cards {
+    padding: 2rem 0;
+}
+
+/* Gradient Card Styling */
 .gradient-card {
     background: linear-gradient(45deg, #6fe3c1, #a871ff, #ff63c3);
     border-radius: 16px;
     position: relative;
     overflow: hidden;
-    z-index: 1;
-    transition: all 0.3s ease-in-out;
-    /* Smooth hover transition */
+    transition: transform 0.3s ease-in-out;
+    z-index: -1;
+    
 }
 
 .gradient-card::before {
@@ -1143,75 +1147,60 @@ body .blogbody {
     right: 2px;
     bottom: 2px;
     background-color: #15131d;
-    /* Inner background for the card */
     border-radius: 15px;
-    /* Smaller radius for inner background */
     z-index: -1;
 }
 
 .gradient-card img {
     border-radius: 15px;
-    /* Optional: round corners for the image */
     max-width: 100%;
     height: auto;
-    /* Maintain image aspect ratio */
 }
 
 .gradient-card h3,
 .gradient-card p {
     color: white;
     text-align: center;
-    /* Center-align text */
 }
 
 .gradient-card:hover {
-    background-color: transparent;
     transform: scale(1.05);
-    /* Slight zoom effect on hover */
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
     .col-md-4 {
-        margin-bottom: 20px;
-        /* Add margin between stacked cards */
-    }
-
-    .gradient-card img {
-        margin: 20px 0;
-        /* Adjust image margin for better spacing */
+        margin-bottom: 1.25rem;
     }
 
     .gradient-card {
-        padding: 20px;
-        /* Adjust padding for smaller screens */
+        padding: 1.25rem;
+    }
+
+    .gradient-card img {
+        margin: 1.25rem 0;
     }
 }
 
 @media (max-width: 480px) {
     .container {
-        padding: 0 15px;
-        /* Adjust padding for mobile screens */
+        padding: 0 1rem;
     }
 
     h1 {
-        font-size: 24px;
-        /* Smaller font size for mobile */
+        font-size: 1.5rem;
     }
 
     .gradient-card h3 {
-        font-size: 20px;
-        /* Reduce card title size on mobile */
+        font-size: 1.25rem;
     }
 
     .gradient-card p {
-        font-size: 14px;
-        /* Smaller text size for mobile */
+        font-size: 0.875rem;
     }
 
     .gradient-card img {
-        margin: 10px 0;
-        /* Reduce image margin on mobile */
+        margin: 0.625rem 0;
     }
 }
 
@@ -1221,6 +1210,7 @@ body .blogbody {
 /* logos section start */
 
 /* Company Logo Section Styles */
+
 .company-logo-section {
     border: 1px solid rgba(128, 128, 128, 0.5);
 }
@@ -1237,7 +1227,7 @@ body .blogbody {
     position: relative;
     padding-left: 30px; /* Space for the icon */
     margin-bottom: 15px; /* Space between paragraphs */
-    border-bottom: 1px solid #ccc; /* Add bottom border */
+    border-bottom: 1px solid #cccccc41; /* Add bottom border */
     padding-bottom: 10px; /* Space between text and border */
     margin-top: 30px;
 }
@@ -1335,8 +1325,94 @@ body .blogbody {
 /* Image with Points Section Styles End */
 
 
-/* next section image with point section styles  end*/
 
+
+
+/* hone-middle-3-cards section end */
+.home-middle-cards {
+    padding: 20px ;
+    
+}
+
+/* Gradient Card Styling */
+.gradient-middle-card {
+    background: linear-gradient(45deg, #6fe3c1, #a871ff, #ff63c3);
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    z-index: -1;
+    height: 40vh;
+    
+}
+
+.gradient-middle-card::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    background-color: #15131d;
+    border-radius: 15px;
+    z-index: -1;
+}
+
+.home-middle-cards-img{
+    height: 40px;
+}
+
+
+.gradient-middle-card h3{
+    font-size: 24px;
+color: white;
+margin-top: 20px;
+
+}
+.gradient-middle-card p {
+    color: rgba(255, 255, 255, 0.719);
+   
+    margin-top: 20px;
+}
+
+.gradient-middle-card:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .col-md-4 {
+        margin-bottom: 1.25rem;
+    }
+
+    .gradient-middle-card {
+        padding: 1.25rem;
+    }
+
+    
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .gradient-middle-card h3 {
+        font-size: 1.25rem;
+    }
+
+    .gradient-middle-card p {
+        font-size: 0.875rem;
+    }
+
+   
+}
+
+/* hone-middle-3-cards section end */
 
 
 
@@ -1407,6 +1483,40 @@ body .blogbody {
 /* New Section with Border and Two Columns end */
 
 
+
+
+
+/* Basic styling for the modal */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0e0c15;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+.modal-content {
+    position: relative;
+    width: 80%;
+    max-width: 640px;
+    background: #fff;
+    padding: 0;
+}
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+.video-iframe {
+    width: 100%;
+    height: 360px;
+}
 
 
 /* join us setion start */
