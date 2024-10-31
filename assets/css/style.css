@@ -710,8 +710,9 @@ body .blogbody {
     transform: scale(1.1);
     font-weight: bold;
 }
+
 @media screen and (max-width:768px) {
-    .getStarted-btn-div{
+    .getStarted-btn-div {
         text-align: center;
     }
 }
@@ -766,7 +767,9 @@ body .blogbody {
 @media (max-width: 767.98px) {
     .gradient-card {
         padding: 2rem 1.5rem;
+        min-height: 29rem;
     }
+
     .home-cards {
         padding: 2rem 2rem;
     }
@@ -796,7 +799,7 @@ body .blogbody {
 }
 
 .company-logo-title {
-    font-size: 20px;
+    font-size: 1.4rem;
     font-weight: 700;
 
 }
@@ -859,10 +862,12 @@ body .blogbody {
         height: 42rem !important;
     }
 }
-@media (min-width:575px) and (max-width:992px){
+
+@media (min-width:575px) and (max-width:992px) {
     .custom-card {
-       padding: 2rem !important;
+        padding: 2rem !important;
     }
+
     .company-logo-section .col-12 {
         display: flex;
         flex-direction: column-reverse !important;
@@ -931,6 +936,7 @@ body .blogbody {
     height: 20px;
     margin-right: 10px;
 }
+
 @media screen and (max-width:768px) {
     .image-card-section {
         padding: 0rem 2rem;
@@ -1156,7 +1162,7 @@ body .blogbody {
 
 .join-us-section {
     padding: 2rem 4rem;
-    background-image: url('./assets/imges/img/stars.png');
+    background-image: url('../imges/img/stars.png');
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 70vh;
@@ -1214,7 +1220,7 @@ body .blogbody {
 }
 
 .feature-explore-img {
-    background-image: url('./assets/images/Bg-Vector.webp');
+    background-image: url('../imges/img/Bg-Vector.webp');
     height: 400px;
     background-size: cover;
 }
@@ -1489,8 +1495,6 @@ body .blogbody {
     padding: 20px 40px;
     background: rgba(128, 128, 128, 0.116);
     border-radius: 10px;
-
-
 }
 
 .getStartedAI-img:hover {
@@ -1523,7 +1527,7 @@ body .blogbody {
 
 } */
 @media screen and (max-width:767px) {
-    #get-hero .col-12 {
+    #get-hero .row {
         display: flex;
         flex-direction: column-reverse;
     }
@@ -1532,8 +1536,38 @@ body .blogbody {
         margin: 0px !important;
     }
 
+    .get-statistic-card {
+        padding: 20px;
+        /* Reduce padding on smaller screens */
+        margin-bottom: 20px;
+        /* Add spacing between cards */
+    }
+
     .get-statistic-card h5 {
         font-weight: bold;
+    }
+}
+
+@media (min-width:768px) and (max-width:992px) {
+    .get-started .row {
+        padding: 0rem !important;
+    }
+
+    .get-started h1 {
+        font-size: 1.2rem;
+    }
+
+    .get-started p {
+        font-size: 0.8rem !important;
+    }
+
+    .get-started {
+        padding: 0rem 2rem !important;
+    }
+
+    .get-hero-img {
+        align-items: end;
+        display: flex;
     }
 }
 
@@ -1812,10 +1846,16 @@ body .blogbody {
     color: red;
 }
 
+.reg-col-img {
+    width: 42rem;
+    height: 31rem;
+}
 
 @media (min-width: 320px) and (max-width: 420px) {
     .reg-col-img {
         margin: 0px !important;
+        width: 22rem;
+        height: 14rem;
     }
 
     .reg-micro-text,
@@ -1864,6 +1904,8 @@ body .blogbody {
 @media (min-width: 420px) and (max-width: 575px) {
     .reg-col-img {
         margin: 0px !important;
+        height: 16rem;
+        width: 22rem;
     }
 
     .reg-micro-text,
@@ -1894,6 +1936,7 @@ body .blogbody {
 @media (min-width: 575px) and (max-width: 768px) {
     .reg-col-img {
         margin: 0px !important;
+        height: 22rem;
     }
 
     .reg-micro-text,
@@ -1968,6 +2011,11 @@ body .blogbody {
     z-index: 0 !important;
     border-top-right-radius: 5px !important;
     border-bottom-right-radius: 5px !important;
+}
+.login-img {
+    margin: 0px;
+    width: 24rem;
+    height: 21rem;
 }
 
 .password-eye {
@@ -2069,6 +2117,8 @@ body .blogbody {
 
     .login-img {
         margin: 0px;
+        width: 22rem;
+        height: 14rem;
     }
 
     .login-remeber-me {
@@ -2731,4 +2781,14 @@ body .blogbody {
 
 .Link:hover {
     text-decoration: underline !important;
+}
+
+.social-media-icons a:hover svg path {
+    fill: #8a2be2;
+    /* Purple color */
+}
+@media screen and (max-width:768px) {
+    .social-media-icons ul {
+        gap: 1rem;
+    }
 }

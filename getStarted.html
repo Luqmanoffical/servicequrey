@@ -67,9 +67,9 @@
 
     <!-- Hero section start -->
     <div class="get-started">
-        <section id="get-hero" class="container">
-            <div class="row px-3">
-                <div class="col-12 d-flex my-4">
+        <section id="get-hero" class="container-fluid">
+            <div class="col-12 px-3">
+                <div class="row d-flex my-4">
                     <div class="col-sm-12 col-md-6 col-lg-6 pt-5">
                         <h1 class="fw-bolder text-white">Open Source</h1>
                         <p class=" py2 fs-6 pt-1 justify text-light">ServiceQuery is open source software and is free to
@@ -93,7 +93,7 @@
                         </a>
                     </div>
 
-                    <div class=" get-hero-img mx-5 col-sm-12 col-md-6 col-lg-6">
+                    <div class="get-hero-img col-sm-12 col-md-6 col-lg-6">
                         <img src="./assets/imges/gif/getstarted.gif" alt="Image" class="get-hero-gif">
                     </div>
                 </div>
@@ -104,37 +104,32 @@
             <div class="container">
                 <div class="text-center">
                     <h1 class="text-white fs-1 fw-bolder pb-4">Code Coverage Statistics</h1>
-
                 </div>
-                <div class="col-12 px-1">
-                    <div class="row d-flex gap-4 justify-content-around">
-
-                        <div class="get-statistic-card col-sm-12 col-md-6 col-lg-5" data-aos="fade-right"
-                            data-aos-offset="100" data-aos-easing="ease-in-sine">
-                            <div class="text-center">
-                                <div class=" text-white">
-                                    <h5 class=" fs-5">Current via CI/CD Pipeline</h5>
-                                    <h1 class="display-1 fw-bold mb-2 fs-1 lh-1">96.08%</h1>
-                                    <p class=" fs-5">We have thoroughly tested our product to ensure it is reliable and
-                                        secure for everyone.</p>
-                                </div>
-                            </div>
+                <div class="row d-flex gap-4 justify-content-around">
+                    <!-- Statistic Card 1 -->
+                    <div class="get-statistic-card col-12 col-md-5" data-aos="fade-right" data-aos-offset="100"
+                        data-aos-easing="ease-in-sine">
+                        <div class="col-12 text-center text-white">
+                            <h5 class="fs-5 fw-bold" style="color: #8a2be2;">Current via CI/CD Pipeline</h5>
+                            <h1 class="display-1 fw-bold mb-2 fs-1 lh-1">96.08%</h1>
+                            <p class="fs-5">We have thoroughly tested our product to ensure it is reliable and secure
+                                for everyone.</p>
                         </div>
-                        <div class="get-statistic-card col-sm-12 col-md-6 col-lg-5" data-aos="fade-left"
-                            data-aos-offset="100" data-aos-easing="ease-in-sine">
-                            <div class="text-center">
-                                <div class=" text-white">
-                                    <h5 class=" fs-5">Current via CI/CD Pipeline</h5>
-                                    <h1 class="display-1 fw-bold mb-2 fs-1 lh-1">96.08%</h1>
-                                    <p class=" fs-5">We have thoroughly tested our product to ensure it is reliable and
-                                        secure for everyone.</p>
-                                </div>
-                            </div>
+                    </div>
+                    <!-- Statistic Card 2 -->
+                    <div class="get-statistic-card col-12 col-md-5" data-aos="fade-left" data-aos-offset="100"
+                        data-aos-easing="ease-in-sine">
+                        <div class="col-12 text-center text-white">
+                            <h5 class="fs-5 fw-bold" style="color: #8a2be2;">Current via CI/CD Pipeline</h5>
+                            <h1 class="display-1 fw-bold mb-2 fs-1 lh-1">96.08%</h1>
+                            <p class="fs-5">We have thoroughly tested our product to ensure it is reliable and secure
+                                for everyone.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
 
         <section id="get-Query" class=" my-5 ">
             <div class="row px-lg-5 px-md-3 px-2 ">
@@ -298,7 +293,7 @@
                     </div>
 
                     <!-- Social Media Section -->
-                    <div class="col-12 col-md-12 col-lg-2 text-center">
+                    <div class="col-12 col-md-12 col-lg-2 text-center social-media-icons">
                         <ul class="list-unstyled d-flex justify-content-center m-0">
                             <li class="me-3">
                                 <a href="#!" class="text-white">
@@ -356,7 +351,7 @@
             </div>
 
             <!-- Copyright Section -->
-            <div class="container-fluid row py-2 mt-2 position-relative z-0">
+            <div class="row py-2 mt-2 position-relative z-0">
                 <div class="col-12">
                     <div class="col-md-12 text-center text-secondary">
                         Copyright © 2024 HoloModule. All rights reserved.
@@ -364,7 +359,7 @@
                     <div class="col-md-12 text-center text-secondary">
                         Design & Develop by
                         <a href="https://glaxit.com/" target="_blank"
-                            class="fw-bold text-decoration-none cursor-pointer" style="color: rgb(170, 18, 170);">
+                            class="fw-bold text-decoration-none cursor-pointer" style="color: #8a2be2;">
                             Glaxit
                         </a>
                     </div>
