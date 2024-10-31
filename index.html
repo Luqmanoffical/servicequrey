@@ -17,55 +17,56 @@
 
 
   <!-- Navbar SECTION START-->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">
-        <img class="nav-logo" src="./assets/imges/logo/logo.png" alt="logo" />
-      </a>
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="./assets/imges/logo/service-query-logo.png" alt="logo" />
+        </a>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav mb-2 mb-lg-0 text-start text-lg-center">
-          <li class="nav-item">
-            <a class="home-link active" aria-current="page" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="features-link" href="features.html">Features</a>
-          </li>
-          <li class="nav-item ">
-            <a class="getstarted-link " href="getStarted.html"> Get Started</a>
-          </li>
-          <li class="nav-item">
-            <a class="consulting-link" href="consulting.html">Consulting </a>
-          </li>
-          <li class="nav-item">
-            <a class="about-link" href="about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="reg-link" href="register.html">Register</a>
-          </li>
-        </ul>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mb-2 mb-lg-0 text-start text-lg-center">
+            <li class="nav-item">
+              <a class="home-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="features-link " href="features.html">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="getstarted-link " href="getStarted.html"> Get Started</a>
+            </li>
+            <li class="nav-item">
+              <a class="consulting-link " href="consulting.html">Consulting </a>
+            </li>
+            <li class="nav-item">
+              <a class="about-link " href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="reg-link " href="register.html">Register</a>
+            </li>
+          </ul>
 
-
-        <div class="d-flex ms-auto mt-2 mt-lg-0">
-          <a href="login.html" class="text-light"><button type="button" class="btn login-btn">Log In</button>
-          </a>
+          <div class="d-flex ms-auto overflow-hidden mt-2 mt-lg-0">
+            <a href="login.html" class="text-light"><button type="button" class="btn login-btn">Log In</button>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </div>
   <!-- Navbar SECTION END-->
 
   <!-- HERO SECTION START -->
 
-  <section id="home-hero" class="  home-hero">
+  <section id="home-hero" class="container-fluid home-hero">
     <div
       class="hero-container d-flex flex-column flex-md-row align-items-center justify-content-between text-center text-md-start">
-      <div class="hero-content col-md-6 px-4" data-aos="fade-right" data-aos-offset="300"
+      <div class="hero-content col-md-6 px-4" data-aos="fade-right" data-aos-offset="100"
         data-aos-easing="ease-in-sine">
         <h1 class="">Revolutionize Data Access<br /> <span>with Query Service</span></h1>
         <p class="mt-3">
@@ -78,7 +79,7 @@
         </div>
       </div>
       <div class="hero-image col-md-6 d-flex justify-content-center mt-4 mt-md-0" data-aos="fade-left"
-        data-aos-offset="300" data-aos-easing="ease-in-sine">
+        data-aos-offset="100" data-aos-easing="ease-in-sine">
         <img src="./assets/imges/gif/headerearth.gif" alt="get-hero-gif" class="home-hero-gif img-fluid" />
       </div>
     </div>
@@ -88,83 +89,88 @@
 
   <!-- Query Service Card Section Start -->
 
-  <section id="home-cards" class="home-cards">
-    <div class="container my-5">
+  <section id="home-cards" class="container-fluid home-cards">
+    <div class="container my-5 text-white">
       <h1 class="text-center mb-5">Why choose Query Service?</h1>
-      <div class="row">
-        <!-- Card 1 -->
-        <div class="col-md-4" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine">
-          <div class="gradient-card p-3">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-12 col-lg-4 mb-4" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
+          <div class="gradient-card p-4">
             <h3 class="text-center">Versatile</h3>
-            <img src="./assets/imges/img/ai_driven.png" alt="Secure" class="img-fluid my-3">
+            <div class="text-center">
+              <img src="./assets/imges/img/ai_driven.png" alt="Versatile" class="img-fluid my-3">
+            </div>
             <p class="text-center">
-              Supports numerous relational (SQL) and document (NoSQL) database engines. Use the same tool to access all
-              of your database engines.
+              Supports numerous relational (SQL) and document (NoSQL) database engines. Use the same tool to access all of your database engines.
             </p>
           </div>
         </div>
-        <!-- Card 2 -->
-        <div class="col-md-4" data-aos="fade-up" data-aos-offset="100" data-aos-easing="ease-in-sine">
-          <div class="gradient-card p-3">
+        <div class="col-12 col-md-12 col-lg-4 mb-4" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine">
+          <div class="gradient-card p-4">
             <h3 class="text-center">Secure</h3>
-            <img src="./assets/imges/img/ai_driven.png" alt="Secure" class="img-fluid my-3">
+            <div class="text-center">
+              <img src="./assets/imges/img/ai_driven.png" alt="Secure" class="img-fluid my-3">
+            </div>
             <p class="text-center">
-              It is a LINQ expressions builder that uses individually mapped functions and parsed data, eliminating
-              injection attacks.
+              It is a LINQ expressions builder that uses individually mapped functions and parsed data, eliminating injection attacks.
             </p>
           </div>
         </div>
-        <!-- Card 3 -->
-        <div class="col-md-4" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
-          <div class="gradient-card p-3">
+        <div class="col-12 col-md-12 col-lg-4 mb-4" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
+          <div class="gradient-card p-4">
             <h3 class="text-center">Powerful</h3>
-            <img src="./assets/imges/img/scope.png" alt="Powerful" class="img-fluid mt-2">
-            <p class="text-center mt-2">
-              Provides clients and front-end applications standardized endpoint for querying capabilities for all your
-              databases.
+            <div class="text-center">
+              <img src="./assets/imges/img/scope.png" alt="Powerful" class="img-fluid my-3">
+            </div>
+            <p class="text-center">
+              Provides clients and front-end applications standardized endpoint for querying capabilities for all your databases.
             </p>
           </div>
         </div>
       </div>
     </div>
-  </section>
+</section>
+
 
   <!-- Query Service Card Section End -->
 
 
   <!-- Query Service Section Start -->
 
-  <section class="company-logo-section border-1 p-4 my-4">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <h1 class="company-logo-title" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
-            Relational and Document<br /> Database Engine Support</h1>
-          <p class="company-logo-text" data-aos="fade-left">Seamless multi-database compatibility with SQL Server,
-            MongoDB, PostgreSQL, and
-            more.</p>
-          <p class="company-logo-text" data-aos="fade-right">Effortless scalability for lightweight databases like
-            SQLite to enterprise
-            systems.</p>
-          <p class="company-logo-text" data-aos="fade-left">Hybrid data management combines the strengths of relational
-            and document
-            databases.</p>
-          <p class="company-logo-text" data-aos="fade-right">Future-ready integration with modern platforms like Cosmos
-            DB and Azure Data
-            Tables.</p>
-          <p class="company-logo-text" data-aos="fade-left">Unified query interface simplifies development across
-            diverse database engines.
-          </p>
-          <div data-aos="fade-right">
+  <section class="container-fluid company-logo-section border-1">
+    <div class="row">
+      <div class="col-12 d-flex text-white">
+        <div class="col-md-12 col-lg-6">
+          <div class="col-md-12 col-sm-12 col-lg-12">
+            <h1 class="company-logo-title">
+              Relational and Document Database Engine Support</h1>
+          </div>
+          <div class="col-md-12 col-sm-12 col-lg-12">
+            <p class="company-logo-text">Seamless multi-database compatibility with SQL Server,
+              MongoDB, PostgreSQL, and
+              more.</p>
+            <p class="company-logo-text">Effortless scalability for lightweight databases like
+              SQLite to enterprise
+              systems.</p>
+            <p class="company-logo-text">Hybrid data management combines the strengths of
+              relational
+              and document
+              databases.</p>
+            <p class="company-logo-text">Future-ready integration with modern platforms like
+              Cosmos
+              DB and Azure Data
+              Tables.</p>
+            <p class="company-logo-text">Unified query interface simplifies development across
+              diverse database engines.
+            </p>
+          </div>
+          <div class="getStarted-btn-div">
             <button class="getStarted-btn"><a class="navbar-brand" href="getStarted.html">Get started</a></button>
           </div>
         </div>
-        <div class="col-md-6 text-center" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
-          data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
+        <div class="col-md-12 col-lg-6 text-center">
           <p class="company-logo-title">ServiceQuery is FREE to use for commercial purposes.
             It is available under the MIT license.</p>
-          <img src="./assets/imges/img/logos.png" alt="Description of the image"
-            class="img-fluid mt-3 company-logo-image">
+          <img src="./assets/imges/img/logos.png" alt="Description of the image" class="img-fluid mt-3">
         </div>
       </div>
     </div>
@@ -176,32 +182,32 @@
 
   <!-- Experience It Firsthand Section Start -->
 
-  <div class="text-center" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
-    <h3 class="first-hand mt-5">Experience It Firsthand!</h3>
+  <div class="row" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
+    <div class="col-12 text-center">
+      <h3 class="first-hand mt-5">Experience It Firsthand!</h3>
+    </div>
   </div>
 
-  <section class="image-card-section" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
+  <section class="container-fluid image-card-section" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
 
     <div class="row align-items-center custom-card">
-      <!-- Image Side -->
       <div class="col-md-6">
         <img src="./assets/imges/img/opensource.jpg" alt="Evolve Your Data" class="img-fluid-point-section" />
       </div>
 
-      <!-- Text and Button Side -->
       <div class="col-md-6 custom-text">
         <h1 class="mb-3">Evolve Your Data <span class="experience-capabilities-text">with Capabilities</span></h1>
 
-        <div class="check-item" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
+        <div class="check-item" data-aos="fade-right">
           <img src="./assets/imges/icons/check.png" alt="Check Icon" class="check-icon" />
           <p>Use our open-source examples to quickly implement solutions for popular databases.</p>
         </div>
 
-        <div class="check-item" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
+        <div class="check-item" data-aos="fade-right">
           <img src="./assets/imges/icons/check.png" alt="Check Icon" class="check-icon" />
           <p>Tailor our examples to fit your unique database needs.</p>
         </div>
-        <div data-aos="fade-left">
+        <div data-aos="fade-right">
           <button class="gradient-btn"><a class="navbar-brand" href="about.html">Learn More</a></button>
         </div>
       </div>
@@ -212,59 +218,54 @@
 
   <!-- home 3 card section start -->
 
-  <section id="home-middle-cards" class="home-middle-cards" data-aos="fade-up" data-aos-offset="300"
+  <section id="home-middle-cards" class="container-fluid home-middle-cards" data-aos="fade-up" data-aos-offset="300"
     data-aos-easing="ease-in-sine">
-    <div class="container my-5">
+    <div class="col-12 my-5 text-white">
       <h1 class="text-center mb-5">Why choose Query Service?</h1>
-      <div class="row">
-        <!-- Card 1 -->
-        <div class="col-md-4" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
-          <div class="gradient-middle-card p-3">
-            <img src="./assets/imges/icons/universaldb.png" alt="icon" class="home-middle-cards-img" />
-            <h3 class="text-left ">Universal Database Access</h3>
-            <p class="text-left">
-              Query any database with one streamlined tool.
-            </p>
-          </div>
+    </div>
+    <div class="col-12 text-white">
+      <div class="row d-flex justify-content-around">
+        <div class="col-12 col-md-6 col-lg-4 gradient-middle-card p-3 mb-4" data-aos="fade-up" data-aos-offset="100"
+          data-aos-easing="ease-in-sine">
+          <img src="./assets/imges/icons/universaldb.png" alt="icon" class="home-middle-cards-img" />
+          <h3 class="text-left">Universal Database Access</h3>
+          <p class="text-left">
+            Query any database with one streamlined tool.
+          </p>
         </div>
-        <!-- Card 2 -->
-        <div class="col-md-4" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
-          <div class="gradient-middle-card p-3">
-            <img src="./assets/imges/icons/secure.png" class="home-middle-cards-img" />
-            <h3 class="text-left">High-Security Standards</h3>
-
-            <p class="text-left">
-              Prevents vulnerabilities with built-in, foolproof query protection.
-            </p>
-          </div>
+        <div class="col-12 col-md-6 col-lg-4 gradient-middle-card p-3 mb-4" data-aos="fade-up" data-aos-offset="100"
+          data-aos-easing="ease-in-sine">
+          <img src="./assets/imges/icons/secure.png" alt="icon" class="home-middle-cards-img" />
+          <h3 class="text-left">High-Security Standards</h3>
+          <p class="text-left">
+            Prevents vulnerabilities with built-in, foolproof query protection.
+          </p>
         </div>
-        <!-- Card 3 -->
-        <div class="col-md-4" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
-          <div class="gradient-middle-card p-3">
-            <img src="./assets/imges/icons/seo.png" class="home-middle-cards-img" />
-            <h3 class="text-left">Optimized Data Retrieval</h3>
-
-            <p class="text-left ">
-              Enables scalable access to complex datasets perfect for demanded appls.
-            </p>
-          </div>
+        <div class="col-12 col-md-6 col-lg-4 gradient-middle-card p-3 mb-4" data-aos="fade-up" data-aos-offset="100"
+          data-aos-easing="ease-in-sine">
+          <img src="./assets/imges/icons/seo.png" alt="icon" class="home-middle-cards-img" />
+          <h3 class="text-left">Optimized Data Retrieval</h3>
+          <p class="text-left">
+            Enables scalable access to complex datasets perfect for demanded appls.
+          </p>
         </div>
       </div>
     </div>
   </section>
 
+
   <!-- home 3 card section end -->
 
-  <!-- Home 6 cards section start -->
+  <!-- Home service delivery section start -->
 
-  <section style="overflow-x: hidden;" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
+  <section class="container-fluid service-delivery-section" data-aos="fade-up" data-aos-offset="300"
+    data-aos-easing="ease-in-sine">
     <div class="text-center text-white">
       <h2>Behind Every Great Delivery</h2>
       <p>The Collective Delivery Squad</p>
     </div>
     <div class="container-6-cards mt-5">
       <div class="row justify-content-center px-3">
-        <!-- First Row -->
         <div class="col-md-4 icon-box text-center">
           <img src="./assets/imges/icons/project_cord.svg" class="six-cards-icons mb-3" />
           <h3>Wide Database Support</h3>
@@ -289,7 +290,6 @@
       </div>
 
       <div class="row justify-content-center px-3 mt-4">
-        <!-- Second Row -->
         <div class="col-md-4 icon-box text-center">
           <img src="./assets/imges/icons/strategic_align.svg" class="six-cards-icons mb-3" />
           <h3>JavaScript Integration</h3>
@@ -317,23 +317,21 @@
 
   <!-- Home 6 cards section end -->
 
-  <!-- New Section with Border and Two Columns Start -->
+  <!-- OPEN SOURCE DIV SECTION Start -->
 
-  <section>
+  <section class="container-fluid open-source-section">
     <div class="container mt-5">
-      <div class="row" style="padding: 50px; border: 1px solid rgba(128, 128, 128, 0.5);border-radius: 20px;">
-        <!-- Left Side: Heading and Description -->
-        <div class="col-md-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-offset="300"
+      <div class="row">
+        <div class="col-sm-6 col-md-12 col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-offset="100"
           data-aos-easing="ease-in-sine">
           <h1 class="open-source-text mb-3">Open Source</h1>
-          <p style="max-width: 500px;">
+          <p class="text-white" style="max-width: 500px;">
             ServiceQuery is open source software and is free to use for commercial purposes. It is available under the
             MIT permissive license.
           </p>
           <div class="mb-2" id="videoLink" style="color: rgb(170, 18, 170);cursor: pointer;">Click to watch our demo
             video!</div>
 
-          <!-- The Modal -->
           <div id="videoModal" class="modal">
             <div class="modal-content">
               <span class="close-btn text-white" id="closeBtn">&times;</span>
@@ -348,8 +346,7 @@
           </div>
         </div>
 
-        <!-- Right Side: Image -->
-        <div class="col-md-6 d-flex justify-content-center" data-aos="fade-left" data-aos-offset="300"
+        <div class="col-sm-6 col-md-12 col-lg-6 d-flex justify-content-center" data-aos="fade-right" data-aos-offset="100"
           data-aos-easing="ease-in-sine">
           <img src="./assets//imges/gif/getstarted.gif" alt="Innovative Solution" class="img-fluid" />
 
@@ -359,17 +356,15 @@
     </div>
   </section>
 
-  <!-- New Section with Border and Two Columns end -->
+  <!-- OPEN SOURCE DIV SECTION end -->
 
 
   <!-- join us section start -->
-  <section
-    style="background-image: url('./assets/imges/img/stars.png'); background-size: cover; background-repeat: no-repeat; min-height: 70vh; padding-bottom: 3rem;">
-    <div class="container h-100">
-      <div class="row align-items-center h-100">
-        <!-- Left Side: Description, Heading, Form -->
+  <section class="container-fluid join-us-section">
+    <div class="container">
+      <div class="row align-items-center text-white">
         <div class="col-lg-6 col-md-7 col-12 text-center text-md-start mb-4 mb-md-0">
-          <h1 class="mb-4" style="text-align: justify;">
+          <h1 class="mb-4" style="text-align:justify;">
             We offer robust sales and consulting services to help your business leverage the full potential of our
             products.
             Get early access to our free features.
@@ -377,13 +372,11 @@
           <p class="mb-3" style="max-width: 500px;">
             Get early access to our free features.
           </p>
-          <!-- Email Input Field and Button -->
           <form class="d-flex flex-column align-items-center align-items-md-start">
             <input type="email" class="form-control mb-3" placeholder="Enter your email" style="max-width: 400px;">
             <button type="submit" class="btn gradient-btn">Get access</button>
           </form>
         </div>
-        <!-- Right Side: PNG Image -->
         <div class="col-lg-6 col-md-5 col-12 d-flex justify-content-center">
           <img src="./assets/imges/img/earth.png" alt="Community" class="img-fluid  " style="width: 300px;" />
         </div>
@@ -397,14 +390,12 @@
     <div class="py-3 px-3  border-top border-light-subtle">
       <div class="overflow-hidden">
         <div class="row gy-4 align-items-center">
-          <!-- Logo Section -->
-          <div class="img-div col-12 col-md-12 col-lg-2 text-center text-md-start">
+          <div class="img-div col-12 col-md-12 col-lg-2 text-center">
             <a href="index.html">
-              <img src="./assets/imges/logo/logo.png" alt="Logo" class="footer-logo">
+              <img src="./assets/imges/logo/service-query-logo.png" alt="Logo" class="footer-logo">
             </a>
           </div>
 
-          <!-- Links Section -->
           <div class="col-12 col-md-12 col-lg-8">
             <ul class="nav justify-content-center flex-wrap">
               <li class="nav-item">
@@ -419,8 +410,8 @@
                   Policy</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link link-secondary text-white fw-bold px-2 px-md-3"
-                  href="termsAndConditions.html">Terms &
+                <a class="nav-link link-secondary text-white fw-bold px-2 px-md-3" href="termsAndConditions.html">Terms
+                  &
                   Conditions</a>
               </li>
               <li class="nav-item">
@@ -429,7 +420,6 @@
             </ul>
           </div>
 
-          <!-- Social Media Section -->
           <div class="col-12 col-md-12 col-lg-2 text-center">
             <ul class="list-unstyled d-flex justify-content-center m-0">
               <li class="me-3">
@@ -483,7 +473,6 @@
         </div>
       </div>
 
-      <!-- Copyright Section -->
       <div class="container-fluid row py-2 mt-2 position-relative z-0">
         <div class="col-12">
           <div class="col-md-12 text-center text-secondary">
@@ -491,7 +480,8 @@
           </div>
           <div class="col-md-12 text-center text-secondary">
             Design & Develop by
-            <a href="https://glaxit.com/" target="_blank" class="fw-bold text-decoration-none cursor-pointer" style="color: rgb(170, 18, 170);">
+            <a href="https://glaxit.com/" target="_blank" class="fw-bold text-decoration-none cursor-pointer"
+              style="color: rgb(170, 18, 170);">
               Glaxit
             </a>
           </div>
